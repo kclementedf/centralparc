@@ -16,7 +16,9 @@ Puis, par groupe de GA :
 ## Ajout des centrales
 Faire valider le fichier _plants_ par groupe de GA (et compléter au besoin)
 Ajouter les contacts donnés précédemment
-Injecter les centrales + emplacements avec un tag "à vérifier"
+Injecter les centrales + emplacements avec un tag "à vérifier" et avec le portefeuille "général"
+
+Injecter les centrales virtuelles dans le protfeuille "facturation" ?
 
 ## Ajout des équipements / composants
 Récupérer : 
@@ -37,12 +39,21 @@ Injection des contrats WindGA dans Bluepoint avec un tag "à vérifier". Faire p
 Tenir à jour le dashboard de converture contractuelle.
 Faire ajouter le prix initial de chaque contrat
 
+Après injection, faire supprimers les contrats d'achat en doublon par CEVEA et rattacher toutes les centrales au bon contrat.
+
 ### Grilles tarifaire
 
 Pour les contrats gérés par la facturation, faire compléter les tarifs initiaux dans le fichier d'import Bluepoint "Rate schedule". Aide possible si on arrive à rapprocher les excel actulels avec les contrats windga et/ou Bluepoint.
 Injecter les grilles par petit paquet (10 / 20 ?) et vérifier avec la facturation à chaque fois. 
 
 Une fois les grilles injecté, mettre à jour les indices via template préparer pour cela.
+
+Ajouter les centrales virtuelles aux grilles des contrats d'achat ?
+
+### _Utility statements_
+
+Récupérer les contrats d'achat et compléter le template d'import avec cette liste.
+
 
 ## Ajout des _compliance_
 Injection des compliance communes à tous les parcs + tâches associés : 
