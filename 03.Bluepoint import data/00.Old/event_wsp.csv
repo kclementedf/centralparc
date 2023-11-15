@@ -1,0 +1,600 @@
+Plant Identifiers;Event Type;Status;Resolution Notes;Event Date;Date Resolved;Est. Revenue Loss;Root Cause;Asset Type;Event Name
+BARB;Centrale - Panne mineure;closed;Remplacement pitch box et bornier moteur de pitch;12/02/2023;19/02/2023;3500;Pitch box;Plants;BARB - Pitch box
+CY11;Centrale - Panne;closed;Déclanchemen Post HTB.  Défaut du DMCR (relais de protection conçu pour les transformateurs immergés dans l'huile) du transformateur HTB. arrêt entre 10:07 et 14:43;11/02/2023;11/02/2023;4000;Défaut composant DMCR;Plants;CY11 - Défaut composant DMCR
+CY12;Centrale - Panne;closed;Coupure Poste HTB déclanchement transormateur défaut relais de protection DMCR. Arrêt entre 10:07 et 14:43;11/02/2023;11/02/2023;4000;Défaut DMCR;Plants;CY12 - Défaut DMCR
+CY13;Centrale - Panne;closed;Déclanchement poste HTB Défaut du relais de protection DMCR du transformateur.;11/02/2023;11/02/2023;4000;Défaut ralais de protection DMCR;Plants;CY13 - Défaut ralais de protection DMCR
+TAIL;Centrale - Panne;closed;Le contacteur DC du pitch a été changé. il semble que cela n'est pas résolu le problème.  Un relais de protection du pitch C  HS a été changé.  Une équipe de maintenance est toujours en investigation sur le problème.;03/02/2023;13/02/2023;0;Contacteur DC et pitch box C;Plants;TAIL - Contacteur DC et pitch box C
+TAIL;Centrale - Panne mineure;closed;Change fuse UPS 63A et test;05/02/2023;06/02/2023;0;UPS;Plants;TAIL - UPS
+MTAR;Centrale - Panne mineure;closed;Fusible à changer . Intervention maintenance.;01/02/2023;02/02/2023;0;fusible;Plants;MTAR - fusible
+FITO;Centrale - Panne;closed;"WT05 : defaut fibre sur un des TIP.
+Les techniciens n'arrivent pas à mettre en sécurité les pales en Y en bloquant 2 pins. Suite à une discussion avec Paul Duval et Nicolas Poisson ce vendredi 17/02, l'intervention va se faire en hauteur et va demander 6 jours au lieu de 3.  Il faut que les conditions de vents ne dépassent pas 6m/s en rafale. 
+Toujours en attente de conditions météo favorables";08/02/2023;08/03/2023;0;pale, tip;Plants;FITO - pale, tip
+FITO;Centrale - Panne;closed;"Déclenchements intempestifs du poste. Yoann Charpentier à déconnecté le smart monitoring au moins pour 48h00 pour essayer de trouver la cause des découplages du poste. Nous sommes actuellement en lecture seul sur le scada. Pour pouvoir recoupler il faut le contacter afin qu'il remette le smart en journée.
+Demande faites au scada pour une solution de hard reboot.";05/02/2023;25/02/2023;0;smart monitoring;Plants;FITO - smart monitoring
+STFR1;Centrale - Panne;closed;"PTR2: Carte de Communication hs. un slave de 500kW à l'arret. Carte en cours d'appro; livrée et remplacé.";09/02/2023;20/02/2023;3000;PTR2;Plants;STFR1 - PTR2
+BVER;Site - Effraction;closed;"8 personnes se sont introduites dans l'éolienne E06 de Beaujolais Vert et ont fait des vidéos postées sur Instagram.
+Une surveillance des alarmes d'ouverture de porte est mise en place avec la conduite et une plainte déposée. ";04/02/2023;27/03/2023;0;Effraction;Plants;BVER - Effraction
+CHAB;Centrale - Télécommunication;closed;"Pertes de communication depuis le 16/02 sur de nombreuses machines.
+Données récupérées RAS";16/02/2023;22/02/2023;0;Communication;Plants;CHAB - Communication
+SERY;Centrale - Panne;closed;"10/02: Détection d'une dente sur la roue de LSS fissurée ou cassée. Une investigation visuelle sur place a été demandée.
+Selon la préconisation de Pôle Méca, la machine doit être mise en pause. Mail à conduite de Hakim.
+
+13/02: Une équipe était sur place pour extraire la dente cassée-fissurée mais très délicat de faire au vu de l'emplacement difficilement accessible, extraction échouée.
+
+14/02: Redemande d'une remise en pause (machine s'est redémarrée) de Hakim.
+Préchiffrage de MCR à venir par Pôle Méca.
+
+La perte s'élève approx à 9k euros.
+
+27/02: WT toujours à l'arrêt, devis en attente
+
+01/03: Nous avons fait le point sur le redémarrage de la machine 5, la conclusion est on redémarre avec un prélèvement d'huile et la surveillance au seuil d'alerte.";10/02/2023;01/03/2023;9000;dent roue LSS fissurée;Plants;SERY - dent roue LSS fissurée
+MA22;Centrale - Coupure  HT;closed;Consignation Poste HTB;13/02/2023;15/02/2023;23000;Poste HTB;Plants;MA22 - Poste HTB
+MA24;Centrale - Coupure  HT;closed;Coupure RTE HTB;13/02/2023;15/02/2023;30000;Coupure HTB;Plants;MA24 - Coupure HTB
+GDGT;Centrale - Panne;closed;Maintenance complète de la centrale - coupure du PDL pendant 3heures. ;21/02/2023;21/02/2023;0;Maintenance Préventive PDL;Plants;GDGT - Maintenance Préventive PDL
+MANO;Centrale - Panne;in_progress;Maintenance 14 ans complète du PDL ;20/02/2023;22/02/2023;0;Maintenance préventive;Plants;MANO - Maintenance préventive
+JADE;Centrale - Panne;closed;Perte de communuication sur l'ensemble du parc de JADE à cause d'une coupure de réseau. Après le passage de Nordex sur site, nous avons retrouver la communication avec la box, mais pas avec le SCADA Nodex. Investigation en cours.;14/02/2023;09/03/2023;0;Perte de communication ;Plants;JADE - Perte de communication 
+VARA;Site - Campagne acoustique;closed;"Campagne de mesure acoustique du 24/02 au 08/03 : chronogramme de test : 2h de marche/ 2h d'arrêt. Fin des mesures avancée au 08/03, au lieu du 14/03, suite à une limitation de puissance Enedis.
+[Pertes estimées avec RDL module Event Analysis : les pertes sont surestimées car les durées d'arrêt ne sont pas conforme à la réalité (problème +1h sur les alarmes Vestas sur PI)]";24/02/2023;08/03/2023;45000;Mesure acoustique;Plants;VARA - Mesure acoustique
+ESPS;Centrale - Panne mineure;closed;Panne sur le frein du rotor, panne arrivé suite au bridage fait par RTE. ;24/02/2023;27/02/2023;7200;Rotor Brake;Plants;ESPS - Rotor Brake
+FITO;Centrale - Panne;closed;"WT07: Fuite transformateur. Réparation effectué par EDF Service avec soudure à froid. 
+Le niveau d'huile est insuffisant pour redémarrer le transformateur. Huile commandée et difficile à trouver. 
+Turbine en run après remplissage de 18l d'huile par EM. 
+La société Transfo Service a été mandaté pour intervenir sur le transformateur. Interviendra en juin.";05/02/2023;09/04/2023;0;transformateur;Plants;FITO - transformateur
+MTAR;Centrale - Panne mineure;closed;"WT19: Problème de pitch. Attente conditions météo favorable pour intervention.
+Changement du moteur de pitch B effectué";24/02/2023;28/02/2023;0;pitch;Plants;MTAR - pitch
+SOUL;Centrale - Panne;closed;"Coupure de communication entre les redresseurs de puissance et la carte controleur de l'onduleur (erreur 402). Nous sommes dans l'attente de
+pieces de rechange de la part de SMA pour le dépannage de l'onduleur 002 630HE.";16/02/2023;07/03/2023;10000;Onduelur n°2- 630HE;Plants;SOUL - Onduelur n°2- 630HE
+ALVI;Centrale - Panne;closed;La E3 & E5 ont été arrêtées par ice deduction le dimanche 26/02 à 9h. Vestas nous prévenu le lundi 27/02, et la levée de doute a permit de les relancer.;26/02/2023;27/02/2023;15000;Arrêt givre;Plants;ALVI - Arrêt givre
+JADE;Centrale - Panne;closed;E07 : impact de foudre sur 2 pales (2 & 3), dont un de catégorie 5 -> arrêt de la machien en attendant les réparations. ;24/02/2023;29/03/2023;62000;Impact de foudre;Plants;JADE - Impact de foudre
+JON2;Centrale - Télécommunication;closed;"Perte de communication d'Enercon avec le Scada.
+Ticket en cours côté DSIN et Orange.";01/03/2023;03/03/2023;0;Lien turbinier;Plants;JON2 - Lien turbinier
+MTL1;Site - Campagne acoustique;closed;Parc en stop suivant chronogramme 2h/2h suite plainte acoustique + repowering ;01/03/2023;15/03/2023;50000;X;Plants;MTL1 - X
+RIBE;Centrale - Télécommunication;closed;"06/03: Pb de Scada, les données de pro sont figées sur Sennen, ticket EZV créé n°I230306_026
+13/03: pb traité";01/03/2023;10/03/2023;0;Scada;Plants;RIBE - Scada
+LEPI;Centrale - Télécommunication;closed;"Perte de communication sur LEPI depuis le 21/02. Ticket I230227_026 : récupération des données sur PI.
+Les données ne sont toujours pas sur Sennen : ouverture d'un ticket WeLoop";21/02/2023;13/03/2023;0;SCADA;Plants;LEPI - SCADA
+FRA1, FRA2;Centrale - Panne;closed;Défaut sur câble Enedis.;27/02/2023;07/03/2023;160000;Incident Enedis;Plants;FRA1, FRA2 - Incident Enedis
+BARB;Centrale - Panne;closed;Défaut Transfo sur PS Enedis.;27/02/2023;15/03/2023;260000;PS Enedis;Plants;BARB - PS Enedis
+TAIL;Site - Campagne acoustique;closed;1 jour d'arrêt du parc pour icing.;01/03/2023;01/03/2023;0;Icing;Plants;TAIL - Icing
+LUC2;Centrale - Panne;closed;remplacement du ventilateur rectifire qui était HS;01/03/2023;04/03/2023;0;ventilateur;Plants;LUC2 - ventilateur
+ESPS;Centrale - Coupure  HT;closed;Coupure Grid. Demande d'information chez Nordex.;08/03/2023;08/03/2023;9000;GRID;Plants;ESPS - GRID
+JONC;Centrale - Panne;closed;Pertes de communication avec 7 SDA;10/03/2023;14/03/2023;10000;Lien telecom;Plants;JONC - Lien telecom
+RAM1;Centrale - Panne mineure;closed;RAM1 WT03.Réducteur de yaw HS depuis le 10/03. Dépannage le 16/03.;10/03/2023;16/03/2023;6600;Réducteur de yaw;Plants;RAM1 - Réducteur de yaw
+RAM1;Centrale - Panne;closed;"RAM1 WT03.
+Gearbox à remplacer suite a analyse vibratoir et vidéo endoscopie.
+Filtration externe de l'huile. 
+La machine reste en fonctionnement.
+Le 20/03 devis FST et SGRE reçus, réunion avec FST prévu le 21/03.
+Le 27/03. Nous ne savons pas à ce jour, si le FST a des ressources pour effectuer les MCR de RAM1 WT03 et WT06. Le choix du prestataire n'est toujours pas acté.
+Le 03/04. L'intervention sera réalisée par le FST et est prévue sem 16 et 17. La machine reste en fonctionnement.
+Le 11/04. Go/Nogo prévu le 12/04.
+Le 17/04. Grutage prévu le 20/04.
+Le 02/05. La machine est restée a l'arrêt, car 2 réducteurs de yaw se sont cassés lors du démontage pour le remplacement de la gearbox. Pas de réducteur en stock.
+Le 09/05. La machine est toujours à l'arrêt. 2 mtoréducteurs de yaw sont à remplacer, l'alignement de la génératrice n'est pas encore fait.
+Le 15/05. Reste un motoréducteur de yaw à remplacer. L'alignement de la génératrice doit être fait cette semaine.
+Le 22/05. Alignement à faire et il reste un motoréducteur de yaw à remplacer. Pas de disponibilité des techniciens de l'antenne.
+Le 30/05. Problème d'alignement de la généreatrice lors du redémarrage.Le coupling a cassé.  
+Le 05/06. Alignement en cours
+Le 12/06. Alignement génératrice prévue aujourd'hui
+Le 19/06. Alignement fait le 13/06. machine en RUN";06/03/2023;13/06/2023;54000;Gearbox;Plants;RAM1 - Gearbox
+RAM1;Centrale - Panne;closed;"RAM1 WT06.
+Le 13/03, le rapport EDC releve des vibrations importantes sur ""1st PLANET BRG""  de la GBX.
+Des limailles métaliques sont présentes sur l'aimant de la GBX.
+Vidéo endoscopie prévue sem 12.
+Le 20/03 attente de la vidéoendoscopie pour faire la demande de devis à SGRE. 
+Le FST à fait une offre pour les 2 MCR WT03 et WT06.
+La machine  est en fonctionnement.
+Le 27/03. La vidéo endoscopie à été repousée au 28/03.
+Le 03/04. La vidéoendoscopie a confirmé un défaut sur un roulement du planétaire cela nécessite le remplacement de la gearbox.
+L'intervention sera réalisée par le FST et est prévue sem 16 et 17. La machine reste en fonctionnement.
+Le 11/04. Réunion go/nogo prévu le 12/04.
+Le 17/04. Levage prévu le 26/04.
+Le 24/04. Installation de la grue et préparation machine prévu ce jour pour un levage le 26/04.
+Le 3/05. Le MCR à du être intérrompu suite à une défaillance de la grue. Reprise prévue le 3/05.
+Le 9/05. La machine est toujours à l'arrêt. Il reste l'alignement de la génératrice et il manque un raccord hydraulique de la pompe offline.
+Le 15/05. Reste un motoréducteur de yaw à remplacer. L'alignement de la génératrice doit être fait cette semaine.
+Le 22/05. Machine redémarrée le 17/05
+";09/03/2023;17/05/2023;18000;Gearbox;Plants;RAM1 - Gearbox
+LBDF;Centrale - Panne;closed;Changement d'un roulement generatrice HSS. ;27/02/2023;13/03/2023;17000;Gearbox;Plants;LBDF - Gearbox
+TAIL;Centrale - Panne mineure;closed;Diode Statcom en défaut. Essais entre la WT02 et WT07 qui auraient les mêmes problèmes. Changement de fusibles.;05/03/2023;09/03/2023;0;statcom;Plants;TAIL - statcom
+JAVI;Site - Campagne acoustique;closed;"Campagne de mesure acoustique du 08/03 au 25/03 : chronogramme de test : 2h de marche/ 2h d'arrêt.
+[Pertes estimées avec RDL module Event Analysis : les pertes sont surestimées car les durées d'arrêt ne sont pas conforme à la réalité (problème +1h sur les alarmes Vestas sur PI)]";08/03/2023;25/03/2023;121000;Mesure acoustique;Plants;JAVI - Mesure acoustique
+MTAR;Centrale - Panne mineure;closed;WT09: Vidange et mise à niveau huile transformateur. Problème de température de l'huile pour refaire les niveaux. L'opération a du se faire en plusieurs interventions.;08/03/2023;09/03/2023;0;Transformateur;Plants;MTAR - Transformateur
+MTAR;Centrale - Panne mineure;closed;WT16: Remplacement pcb optical master;04/03/2023;06/03/2023;0;PCB optical master;Plants;MTAR - PCB optical master
+GRPL;Centrale - Panne mineure;closed;"Remplacement d'un contacteur de ligne du convertisseur - retard d'approvisionnement de fusibles et du contacteur.
+TBS le 16/03/23 par l'équipe de maintenance.";11/03/2023;16/03/2023;13100;Convertisseur;Plants;GRPL - Convertisseur
+GOUR;Site - Campagne acoustique;closed;E1, E6, E7 ont subit chacune deux arrêts givre cette semaine.;10/03/2023;15/03/2023;5300;PCID;Plants;GOUR - PCID
+GOUR;Site - Campagne acoustique;closed;Campagne de réception acoustique.;25/02/2023;17/03/2023;87900;Réception Acoustique;Plants;GOUR - Réception Acoustique
+CDBO;Centrale - Panne mineure;closed;Sur V4, Water pump HS. Présence journalière de Vestas pour effectuer les réparations.;09/03/2023;13/03/2023;13000;Temp Rotor;Plants;CDBO - Temp Rotor
+CDBO;Centrale - Panne mineure;closed;Sur V1, Q8 Breaker open. Intervention Vestas, turbine en run.;11/03/2023;13/03/2023;7300;Q8 Breaker;Plants;CDBO - Q8 Breaker
+PDCE;Centrale - Panne;closed;"Machine bridée à 1MW pour préservation du slipring
+Slipring à changer. En attente de la part de SGRE du kit pour remplacement. ";02/02/2023;;24800;Slip ring;Plants;PDCE - Slip ring
+FITO;Centrale - Coupure  HT;closed;Coupure sur le poste. Impossible de redémarrer à distance par l'OCC. ;16/03/2023;17/03/2023;0;poste;Plants;FITO - poste
+RAM2;Centrale - Panne mineure;closed;"RAM2 WT02.
+Depuis le 13/03. 4 motoréducteurs de yaw HS. Pas de pièce en stock.
+Le 27/03. Les motoréducteurs sont livrés. La maintenance a des difficultés pour extraire les réducteurs HS.
+Le 03/04. La machine à été relançée avec 3 réducteurs sur 4 le 31/03.
+";13/03/2023;31/03/2023;20000;Motoréducteur de yaw;Plants;RAM2 - Motoréducteur de yaw
+STUL;Centrale - Panne;in_progress;;20/03/2023;;0;;Plants;STUL - nan
+FECA;Centrale - Panne mineure;closed;FECA5 : Contacteurs et condensateurs HS. Remplacés, turbine redémarrée. ;12/03/2023;28/03/2023;15100;Convertisseur;Plants;FECA - Convertisseur
+HAB1, HAB2;Centrale - Panne mineure;closed;"Problème de capteur au niveau du transformateur ; nuit à l'arrêt pour refroidir le transformateur avant l'intervention";13/03/2023;15/03/2023;10000;Transformateur E07;Plants;HAB1, HAB2 - Transformateur E07
+MA22;Centrale - Coupure  HT;closed;"Consignation Ligne HTB ""Les Craies"" + section JDP. ";13/03/2023;16/03/2023;60000;Intervention RTE;Plants;MA22 - Intervention RTE
+VARA;Centrale - Coupure  HT;closed;Limitation de puissance Enedis à 2200kW (cause : travaux RTE);06/03/2023;17/03/2023;41000;Limitation de puissance Enedis à 2200kW;Plants;VARA - Limitation de puissance Enedis à 2200kW
+MA24;Centrale - Coupure  HT;closed;"Consignation ligne ""les craies"" + Section JDP 1.2 ";13/03/2023;15/03/2023;36000;Intervention RTE;Plants;MA24 - Intervention RTE
+MA22;Centrale - Panne;closed;Problème Transfo HBT. Bruit anormal dans la cellule HTA et transfo. Sous traitant LMLEC ( sous traitent GDM 10 ans ) en intervention 20/03 pour identifier la source du problème.;18/03/2023;20/03/2023;26701;Anomalie Transfo;Plants;MA22 - Anomalie Transfo
+MA24;Centrale - Panne;closed;Anomalie transformateur. Bruit anormal cellule HTA et transformateur. LMLEC (sous traitant GDM 10 ans ) sur site 20/03 pour identifier le proclème. ;18/03/2023;20/03/2023;24494;anomalie Transfo;Plants;MA24 - anomalie Transfo
+BRIY;Centrale - Panne;closed;"13/03: Remontée du problème de FG8 HS donc la machine ne se recouple plus au réseau par Hakim
+pas de pièce en spare part.
+
+contacteur installé par SGRE le 5/10/2020 son cycle est de 8231(valeur max autorisée: 50 000 cycles). A voir si la pièce est sous garantie.
+
+20/03: Attente de livraison de la pièce, probablement pièce sera livrée dans qq jours.
+
+27/03: pièce reçue le 20/03, remplacement le jr même WT OK";10/03/2023;20/03/2023;10000;FG8;Plants;BRIY - FG8
+FRA1, FRA2;Centrale - Coupure  HT;closed;;16/03/2023;17/03/2023;7000;Défaut sur réseau Enedis;Plants;FRA1, FRA2 - Défaut sur réseau Enedis
+CASH;Centrale - Coupure  HT;closed;Défaut sur réseau Enedis;16/03/2023;17/03/2023;7500;Défaut Enedis;Plants;CASH - Défaut Enedis
+OUPI;Centrale - Panne mineure;closed;"Pompe hydraulique hub probablement HS. 
+Décision de mise à l'arrêt de l'éolienne en attendant l'arrêt du parc définitif le 20/03.";15/03/2023;20/03/2023;1000;Pompe hydaulique;Plants;OUPI - Pompe hydaulique
+CHAB;Centrale - Panne;in_progress;"CHAB-WT36: Incendie le 20/03 à 06h53. Eolienne brulée et HS. 
+Mise hors tension du reste du parc jusqu'au 23/03. 
+Reste du parc arrêté jusqu'à accord de la DREAL pour la relance des machines. 
+Etude de risque de chute de hauteur en cours. 2nd inspection par drone réalisée LE 27/03 afin de déterminer processus de démantèlement (vérification intégrité boucles de levage). 
+Arrêté Prefectoral de Mise en Urgence reçu le 23/03 et réponse apportée le 24/03 (mise en place périmètre de sécurité + mise en place gardiennage). 
+Echange avec la DREAL sur les modalités de remise en service des 25 autres éoliennes (envoie d'une première proposition de processus de redémarrage). En attente retour DREAL sur le processus de redémarrage des 25 autres éoliennes. 
+Réunions récurentes avec la DREAL pour les conditions de redémarrage. 
+Version 2 d'un rapport circonstancié d'accident partagé à la DREAL. 
+Construction du dossier assurance en cours. 
+Rédaction en cours de la première version de la RCA. Sera co-construite avec SGRE et non concluante. 
+Site mis en sécurité le 05/05. Photos détaillées d'éléments de l'éolienne prise lors de l'opération de mise en sécurité. 
+Opération de dépollution de la zone a été menée du 15/05 au 18/05
+Etude en cours des options de démantèlement. 
+Checklist préalables à un redémarrage en cours. 
+Autorisation reçues pour redémarrage de 14 éoliennes. Protocole validé par la DREAL. 
+";20/03/2023;;5966000;A déterminer;Plants;CHAB - A déterminer
+FOST;Centrale - Coupure  HT;closed;;22/03/2023;23/03/2023;5000;Découplage;Plants;FOST - Découplage
+JADE;Centrale - Panne;in_progress;E06 : MCR en cours de plannification pour le remplacement du roulement principal (et éventuellement la boite de vitesse aussi).;23/03/2023;;102000;Roulement principal;Plants;JADE - Roulement principal
+STSI;Centrale - Panne;closed;E03: Recalibrage alim hub;18/03/2023;21/03/2023;6000;Alim hub;Plants;STSI - Alim hub
+SARA;Centrale - Commissioning;closed;Passage en OR3 le 31/03/2023;24/03/2023;31/03/2023;0;OR3;Plants;SARA - OR3
+TL13;Centrale - Panne;closed;Sous performance 2023;20/03/2023;20/03/2023;0;Maintenance;Plants;TL13 - Maintenance
+LOMO;Site - Campagne acoustique;closed;Pertes liées à la campagne acoustique dans le cadre du projet de repowering. La campagne ne se déroule que sur un PDL. On notera que des arrêts prix négatifs survenus dans le weekend n'ont pu être dissociés de ces événements ici.;24/03/2023;05/04/2023;51000;Acoustique;Plants;LOMO - Acoustique
+SOUR;Centrale - Panne mineure;closed;Arrêts prix négatifs, erreur de communication entre la conduite et SCEMEA. Les turbines ont été relancées manuellement le 27/03 par Vestas.;25/03/2023;27/03/2023;39500;Prix négatifs;Plants;SOUR - Prix négatifs
+MODF;Centrale - Panne mineure;closed;"Problème de pitch récurrent sur l'éolienne 06 depuis le 23/03.
+L'éolienne n'est pas arrêtée depuis le 23/03 mais les dépannages ne durent pas longtemps.
+Remplacement des cables d'alimentation allant au hub le 27/03, ce qui a résolu le problème";23/03/2023;28/04/2023;5500;Pitch;Plants;MODF - Pitch
+CDBO;Centrale - Panne mineure;closed;Intervention Scheneider pour TBS. Bruit suspect intérieure cellule HT, remplacement cellule effectué après consignation départ E11 en PDL. Turbine toujours à l'arrêt, remplacement relais.;24/03/2023;30/03/2023;14700;Cellule HT;Plants;CDBO - Cellule HT
+CEFF;Centrale - Panne mineure;closed;"Contacteurs HS sur l'éolienne 01, éolienne arrêtée longtemps à cause d'un problème d'approvisionnement 
+Intervention le 28/03, pas de problème depuis";17/03/2023;28/04/2023;9100;Convertisseur;Plants;CEFF - Convertisseur
+OUPI;Centrale - Coupure  HT;closed;20/03 à 17h mise à l'arrêt définitif du parc pour démantèlement;20/03/2023;20/03/2023;0;Démantèlement;Plants;OUPI - Démantèlement
+FITO;Centrale - Panne mineure;closed;Turbine à l'arrêt pour un problème électrique, retour à la terre.;26/03/2023;28/03/2023;0;eolienne;Plants;FITO - eolienne
+LEPI;Centrale - Panne mineure;closed;"Busbar HS sur l'éolienne 04
+Remplacement réalisé le 07/04, éolienne fonctionnelle";17/03/2023;07/04/2023;17100;Busbar;Plants;LEPI - Busbar
+FITO;Centrale - Panne;closed;WT02 et WT03 à l'arrêt : Un des tip est coincé à moitié dehors et le mécanisme de bouge pas lorsque l’on manipule ;27/03/2023;27/05/2023;0;TIP ;Plants;FITO - TIP 
+SOUR;Centrale - Panne mineure;closed;Opérations de soudure réalisée sur la E12 et la E16 pour réparer le frame.;18/03/2023;04/04/2023;35000;Frame;Plants;SOUR - Frame
+RAM2;Centrale - Panne;in_progress;"RAM2 WT01
+Le 03/04. Lors de l'astreinte du 1/04, les techniciens ont constaté que la barre de connexion de la bobine du transfo phase 3 a fondu. Un remplacement du transfo est certainement à prévoir.
+Le 11/04. Attente confirmation par le FST d'une possible réparation du transfo en machine.
+Le 17/04. La maintenance attend le matériel pour tester le transfo.
+Le 24/04. Matériel reçu contrôle du tranfo à effectuer.
+Le 2/05. Pas de personnel dispo sur l'antenne pour faire le contrôle du transfo.
+Le 09/05. Le contrôle électrique du transformateur à été réalisé, RAS. Le FST propose une réparation en machine de la barre de connexion par un prestataire.
+Le 15/05. Demande de réparation faite à Hitachi. Pas de date d'intervention pour le moment.
+Le 22/05. Idem
+Le 30/05 Idem
+Le 05/06. Point équipe maintenance avec le FST S23
+Le 12/06.Point avec FST ce jours.
+Le 19/06. Attente du matériel pour faire une réparation en nacelle.
+Le 26/06. Commande passée attente d'une date de livraison du matériel.
+Le 03/07. Toujours en attente de livraison des pièces pour la réparation du transfo.
+Le 10/07. Pas plus d'info que la semaine précédente.
+Le 17/07. Livraison des pièces pour la réparation prévu S29.
+Le 24/07. Pièces pour réparation non reçues.
+Le 29/07. Idem";01/04/2023;;112000;Transformateur;Plants;RAM2 - Transformateur
+RAM1;Centrale - Panne mineure;closed;"RAM1 E2
+Le 03/04. 2 motoréducters HS suite aux rafales de vent.
+Le 11/04. Les réducteurs n'ont toujours pas été remplacés.
+Le 17/04. La machine a été relancée le 12/04.";30/03/2023;;13000;Motoréducteur;Plants;RAM1 - Motoréducteur
+VARA;Centrale - Coupure  HT;closed;Limitaition puissance Enendis à 5,9MW suite à des contraintes sur le réseau RTE;30/03/2023;07/04/2023;4500;Limitation puissance Enedis;Plants;VARA - Limitation puissance Enedis
+BAMB;Centrale - Télécommunication;closed;"Problème de remontée de données sur Bambesch depuis le 20/03, ticket I230329_080 ouvert
+11/04 : sujet toujours pas traité
+17/04 : sujet toujours pas traité, il a été affecté à un ingénieur scada en vacances 
+24/04 : le problème vient de Gamesa, l'envoi de données hebdo n'est pas réalisé. Pas de réponse du RZ pour l'instant et ""area manager"" en vacances
+02/05 : le RZ de SGRE a fait un ticket a son support technique. En attente du renvoi des données sur la période manquante et du rétablissement du lien automatique
+09/05 : en attente d'une action du support industriel IT EDFre pour récupérer les données manquantes. Connexion rétablie au 04/05.";20/03/2023;04/05/2023;0;SCADA;Plants;BAMB - SCADA
+BOUS;Centrale - Panne;closed;"24/03: pb de pitch batteries WT4
+vent trop fort pour intervenir
+27/03: intervention pour dépanner pitch, WT tjrs à l'arrêt
+28/03: remplacement pitch batterie 1, mais il faut tout remplacer par contre
+
+13/04: redémarrage 
+
+Pb d'effectif, pb de supply chain, 22 000 euros environ de pertes ( 361.8 MWh)";03/04/2023;13/04/2023;22000;Pitch batteries;Plants;BOUS - Pitch batteries
+CASH;Centrale - Panne mineure;closed;Moteur de pitch HS, remplacement en cours;20/03/2023;07/04/2023;15000;Moteur de pitch;Plants;CASH - Moteur de pitch
+FRA1, FRA2;Centrale - Panne mineure;closed;Moteur de pitch HS;27/03/2023;04/04/2023;9000;Moteur de pitch;Plants;FRA1, FRA2 - Moteur de pitch
+MTAR;Centrale - Panne mineure;closed;Turbine E1: Vérification huile transformateur, remplissage huile. Vérification capteur de bruit.;28/03/2023;29/03/2023;0;transformateur;Plants;MTAR - transformateur
+ERIZ;Centrale - Télécommunication;closed;"Parc bridé à 2MW au lieu de  6MW:
+Suite à la demande de limitation d'Enedis à 6MW, l'ACR a limité le parc à 6MW mais l'ordre reçu est de 2MW.
+Vu que le contrôle du CWE dans le scada Nordex était impossible, le bridage manuel des turbines n'a pas pu être effectué. Il fallait donc revenir au bridage initial via le DEIE à 2MW en temps réel.  
+Claim Enedis envoyé le 10/05/23";30/03/2023;02/04/2023;21280;Consigne de bridage;Plants;ERIZ - Consigne de bridage
+FECA;Centrale - Panne mineure;closed;FECA4 : contacteurs de ligne brulés. Remplacés et turbine redémarrée.;07/04/2023;14/04/2023;7300;Convertisseur;Plants;FECA - Convertisseur
+CLIT;Centrale - Panne mineure;closed;"E04 : plaquettes de frein arbre rapide usées. Fabrication d'un outil d'extraction specifique et remplacement des plaquettes.
+(la longueur de l'arrêt est liée à la fabrication de l'outil)";16/03/2023;30/05/2023;13000;Frein;Plants;CLIT - Frein
+JON2;Centrale - Télécommunication;closed;Multiples pertes de communication avec le lien ComIP gérant les SDA.;28/03/2023;07/04/2023;2880;Perte de lien satellite;Plants;JON2 - Perte de lien satellite
+JONC;Centrale - Télécommunication;closed;"La communication avec les SDA des machines 4 et 5 est très instable, les machines sont à l'arrêt jusqu'à résolution.
+
+07/04 : Perte de comm avec la machine 3 également
+
+";04/04/2023;21/04/2023;6500;Perte de communication;Plants;JONC - Perte de communication
+MTAR;Centrale - Inspection ICPE;closed;Exercices avec le SDIS sur les turbines S4 et S5 dans le cadre des obligations répondant à l'arrété ICPE;07/04/2023;07/04/2023;0;Exercices;Plants;MTAR - Exercices
+FITO;Centrale - Panne;closed;WT04: Panne Isolation Faut 400V. Difficultés à trouver la panne.;31/03/2023;04/04/2023;0;Fusibles;Plants;FITO - Fusibles
+LORO;Centrale - Télécommunication;closed;"LORO SS01
+Le 11/04. Pertes de Com avec PI sur toutes les machines de LORO. Demande d'informations à SGRE attente d'un retour. 
+Le 17/04. La com avec PI est revenue";05/04/2023;;0;SCADA;Plants;LORO - SCADA
+MODF;Centrale - Télécommunication;closed;"Perte de comm depuis le 04/04.
+Ticket I230411_036 ouvert. Fin de l'incident le 14/04. Retrofit a venir pour éviter ce genre de problèmes.";04/04/2023;14/04/2023;0;SCADA;Plants;MODF - SCADA
+BRIA;Centrale - Coupure  HT;closed;Coupure HT enedis ;27/03/2023;02/04/2023;0;Enedis;Plants;BRIA - Enedis
+LORO;Site - Campagne acoustique;closed;"Le 17/04. Début de la campagne de réception acoustique du parc de LORO.
+Le 24/04. Les données de vent, orientation, puissance ont été envoyées le 21/04 au cabinet Delhom pour faire un premier point sur les données acoustiques collectées dans le but de réduire au maximum la durée et les arrêts de l'étude.
+Le 2/05; Etude toujours en cours.
+Le 09/05. Le Cabinet Delhom compile les données et doit revenir vers moi pour me confirmer qu'ils ont suffisamment de données.
+Le 15/05. Récupération des données faites. Il manque des données de secteur Sud-Ouest de 7 à 9m/s. Pas de vent dans cette direction prévu. Le cabinet Delhom doit récupérer le matériel. Je dois voir avec le service enviro si les données sont suffisantes pour clôturer la réception accoustique.";17/04/2023;;179000;Arrêt parc;Plants;LORO - Arrêt parc
+RAM2;Centrale - Panne;in_progress;"RAM2 E2.
+
+Le 17/04. le motoréducteur qui avait été remplacé le 31/03 a cassé. 
+Le 24/04. Le disjoncteur des moteurs tombe régulièrement les investigations sont en cours.
+Le 02/05. Sujet toujours en cours d'investigation.
+Le 09/05. Sujet toujours en cours d'investigation.
+Le 15/05. Sujet toujours en cours d'investigation.
+Le 30/05. Chaine du pendulum cassée. Cela provoque des vibrations et la casse des réducteurs de YAW. Un devis a été fait pas SGRE, attente d'une date d'intervention.
+Le 05/06. Relance de SGRE pour l'intervention. Attente d'une date d'intervention.
+Le 12/06. Intervention de SGRE prévue cette semaine pour la réparation du pendulum.
+Le 19/06. Intervention SGRE pour réparation du pendulum le 16/06. Machine en RUN mais pas de com.
+Le 26/06. Machine en RUN mais pas de com. Problème de RFC.
+Le 03/07. 4 dents de la courone de yaw sont partiellement cassées. investigation de la maintenance en cours.
+Le 17/07. Remplacement des 4 réducteurs de yaw prévu S29
+Le 24/07. Les 4 réducteurs ont été remplacés, mais un bruit de craquement se fait entendre lors de la rotation de la nacelle. Le FST préconise le remplacement d'un segment de la couronne de yaw. Les pièces sont en commande.
+Le 29/07. Attente de livraison des pièces
+";12/04/2023;;97000;motoréducteur yaw, Courone de yaw;Plants;RAM2 - motoréducteur yaw, Courone de yaw
+FECA;Centrale - Panne mineure;closed;FECA3 : Problème étrier de frein arbre rapide, vis bloquée, remplacement de l'étrier et extraction de la vis.;07/04/2023;26/04/2023;11000;Frein;Plants;FECA - Frein
+MODF;Centrale - Panne mineure;closed;"17/04 : Problèmes avec les slip rings des génératrices des éoliennes 1, 2, 3 et 5.
+Toutes les éoliennes ont été inspectées semaine 15 après la détection de ce problème sur la 01 mardi 11/04.
+4 éoliennes arrêtées en attendant le remplacement des 4 slip rings
+
+24/04 : 3/4 sliprings changées, seule l'éolienne 01 est arrêtée désormais
+24/04 (quelques heures après l'entrée du WSP précédent) : toutes les sliprings ont été changées. 
+
+Sujet clos.";12/04/2023;24/05/2023;54000;Génératrice;Plants;MODF - Génératrice
+LOMO;Centrale - Panne mineure;closed;Event sur la machine 7: Emergency circuit open. Remplacement relais de sécurité.;01/04/2023;03/04/2023;5400;Circuits Elecs;Plants;LOMO - Circuits Elecs
+SOUR;Centrale - Télécommunication;closed;Perte de remontée donnée RDL sur SS01. Semble être identique sur PI. Plus d'accès SCADA. Ticket turbinier en cours.;10/04/2023;24/04/2023;0;SCADA/PI;Plants;SOUR - SCADA/PI
+RIOL;Centrale - Panne;closed;"4 moto-réducteur de yaw HS 
+Ensemble des moteurs déja remplacé il y a 1 mois.
+RCA : absence de la bague interne du roulement de l'axe moteur sur au moins 3 des moteurs
+A entrainé la casse de plusieurs dents de la couronne de yaw 
+- Intervention planifier : test par ressuage et mêler, ébavurer les dents cassées  : Résultats 33 dents fissurées
+Machine mise à l'arrêt jusqu'à la réparation de la couronne de yaw .
+Intervention de réparation prévu le 22/05
+05/06 : Inspection de réception de travaux Izanda  
+07/06: Remise en route turbine 
+";01/04/2023;07/06/2023;30000;moteur yaw;Plants;RIOL - moteur yaw
+MTAR;Centrale - Panne mineure;closed;E1: Suite à un remplissage d'huile par la maintenance en début d'après midi, la turbine s'est mise en défaut de surpression en début de soirée.;12/04/2023;13/04/2023;0;transfo;Plants;MTAR - transfo
+SACU;Centrale - Panne;closed;Le roulement d'une pale de l'éolienne 21 est HS. Remplacement à programmer ;20/04/2023;22/06/2023;70000;Roulement pale;Plants;SACU - Roulement pale
+ERIZ;Centrale - Panne mineure;closed;"2 motoréducteurs de Yaw sont HS sur la WT05, elle est relancée en mode dégradé en attendant le remplacement des réducteurs.
+MCR retardé du au manque de ressources humaines. 
+Remplacement des gear motors réalisé le 27/06/23.";11/04/2023;28/07/2023;54500;Yaw Gear Motors;Plants;ERIZ - Yaw Gear Motors
+PCR1;Centrale - Panne mineure;closed;La capteur de température de la géné E9 a été remplacé car hs.;11/04/2023;;0;Capteur de température géné;Plants;PCR1 - Capteur de température géné
+POTI;Centrale - Coupure  HT;closed;Coupure du réseau HTA par EDF SEI pour travaux sur réseau HTB. Compensation demandée.;17/04/2023;13/05/2023;162200;Réseau HTB EDF SEI;Plants;POTI - Réseau HTB EDF SEI
+POTI;Centrale - Panne;in_progress;"Cellule HTA hs , 1,5MW (1/3 de la centrale) à l'arret.  42 semaines d'appro (février 2024).
+Intervention sur site de GE le 13/07/2023.";01/04/2023;;95000;Cellule HTA PTR2;Plants;POTI - Cellule HTA PTR2
+FITO;Centrale - Télécommunication;closed;Les techniciens sont intervenus pour une maintenance du poste. A leur départ le parc est resté à l'arrêt jusqu'a leur retour le lendemain suite à une perte de comm.;19/04/2023;20/04/2023;0;scada;Plants;FITO - scada
+LOMO;Centrale - Panne mineure;closed;E12 problème pitch C. Multiples interventions de techniciens, sans pouvoir réparer la panne. Demande Vestas plus d'information sur les problèmes rencontrés.;20/04/2023;25/04/2023;6000;Pitch;Plants;LOMO - Pitch
+LOMO;Centrale - Panne mineure;closed;Pression d'huile basse sur la E15. Multiples interventions de techniciens, sans pouvoir réparer la panne. Demande Vestas plus d'information sur les problèmes rencontrés.;19/04/2023;25/04/2023;6000;Oil;Plants;LOMO - Oil
+PDCE;Centrale - Panne;closed;"Erreur de convertisseur sur WT05
+Slipring à remplacer.
+Remplacement effectué le 14/04";16/03/2023;14/04/2023;48000;Slipring;Plants;PDCE - Slipring
+FREY;Centrale - Panne;closed;"Panne longue sur FREY-E5. En attente d'information de la part de Vestas. 
+Usure, nombreux contacteurs à réparer. ";17/04/2023;06/05/2023;15000;Inverter;Plants;FREY - Inverter
+HERO;Centrale - Panne;closed;Machine à l'arrêt sur un probleme de slipring et roulement DE génératrice. Approvisionnement de pièces longues pour remise en service de l'éolienne. Dépannage et remise en service le 06/06/2023;10/04/2023;;66000;Generatrice;Plants;HERO - Generatrice
+SACU;Centrale - Panne;closed;Le roulement d'une pale de l'éolienne 6 est HS. MCR en cours ;28/04/2023;22/06/2023;70000;Roulement pale;Plants;SACU - Roulement pale
+CY12;Centrale - Panne mineure;closed;"Remplacement SJB, inversion des pôles lors du remplacement. Intervention extraction du fusible + ""arc"" électrique s'est produit, enfalemmement locale sur l'arrivée SJB.  Incendie éteint avec un exctincteur.   CY12-SH02-I2-S05 qui est déjà à l arrêt . CY12-SH02-I2-SJB 05 Remplacement SJB.";24/04/2023;24/05/2023;1000;SJB;Plants;CY12 - SJB
+PEZI;Centrale - Panne;in_progress;"PEZI B9 : dent fissurée sur courrone gearbox. Limitation de l'éolienne à 2MW (pour une Pmax à 3MW)
+MCR prévu en semaine 32";21/04/2023;;27000;Gearbox;Plants;PEZI - Gearbox
+MA22;Centrale - Panne;closed;Début de l’incendie sur MA22 détecté par entreprise sous-traitante sur site. Appel pompier et intervention technicien sur site. Mise hors tension onduleur 1 et 2 intervention extincteur CO2. Estimation 20 panneaux brulés;25/04/2023;25/04/2023;16200;Départ feu modules;Plants;MA22 - Départ feu modules
+JONC;Centrale - Panne;closed;Pertes de communication avec tous les SDA du parc. Problème du côté de Biodivwind.;25/04/2023;26/04/2023;5000;Perte de com;Plants;JONC - Perte de com
+JONC;Centrale - Panne;closed;Perte de com sur le WLAN2 du parc, les machines concernées sont mises à l'arrêt.;02/05/2023;19/05/2023;5000;Perte de com;Plants;JONC - Perte de com
+BRIA;Centrale - Coupure  HT;closed;Coupure Enedis : limitation à 0kW sur la période 24/04/2023 08:00 à 13:00 et coupure 25/04/2023 9 :00 au 25/04/2023 16 :00;24/04/2023;25/04/2023;10000;Coupure HTA Enedis;Plants;BRIA - Coupure HTA Enedis
+NIED;Centrale - Télécommunication;closed;"Perte de communication depuis le 25/04/23. Ticket I230502_032 ouvert. Matthieu HOLVECK suit ce sujet.
+15/05 : sujet clos";25/04/2023;10/05/2023;0;Scada;Plants;NIED - Scada
+STAU;Centrale - Télécommunication;closed;28/04: perte de comm en cours;28/04/2023;03/05/2023;0;SCADA;Plants;STAU - SCADA
+LOMO;Centrale - Télécommunication;closed;"08/05 : Incident sur la ligne orange. Intervention rebootage box prévue le 9 mai.
+15/05 : Reboot effectué, non suffisant. Intervention orange à venir.";03/05/2023;23/06/2023;0;Orange;Plants;LOMO - Orange
+SOUR;Centrale - Coupure  HT;closed;Une coupure réseau à conduit à recoupler les postes sources. Des incompréhensions entre OCC Vestas et Service empêchent de récupérer la fonctionnalité complète du parc.;03/05/2023;05/05/2023;20000;Coupure Enedis;Plants;SOUR - Coupure Enedis
+LORO;Centrale - Télécommunication;closed;"LORO SS01:
+
+Le 9/05: Perte de com avec le parc depuis le 24/04. PI NOK. Ticket ouvert chez SGRE, car il semble que les mots de passe SCADA est été changé lors d'une mise à jour du SCADA.
+15/05. Investiguations coté SGRE toujours en cours.";26/04/2023;;0;SCADA;Plants;LORO - SCADA
+MODF;Centrale - Télécommunication;closed;"Perte de comm côté Senvion puis côté EDF. Ticket I230420_082 ouvert.
+Suite ticket I230420_082 : le routeur Senvion est débranché ou le cable est défaillant. 
+Interventions Senvion les 10,12 et 15 mai. Toujours pas de comm sur le parc. 
+
+30/05 : Comm EDF récupérée le 15/05, reste à réactiver le lien côté Senvion
+05/06 : sujet clos. Il s'agissait d'un problème de configuration de la box par Orange";27/04/2023;02/06/2023;0;Lien orange;Plants;MODF - Lien orange
+FREY;Centrale - Panne;closed;"Réparation pales : 
+E2 : 3 jours
+E6 : 5 jours";03/05/2023;11/05/2023;10000;Blades;Plants;FREY - Blades
+TOUC;Centrale - Panne mineure;closed;Arret centrale pour remplacement AFE.;11/05/2023;12/05/2023;3000;AFE;Plants;TOUC - AFE
+PEZI;Centrale - Panne;closed;Eolienne P15 : Roulement génératrice NDE HS, remplacé par les technciens de l'équipe de Pézilla;09/05/2023;12/05/2023;16000;Roulement génératrice;Plants;PEZI - Roulement génératrice
+GAB1;Centrale - Panne;in_progress;"Limitation de production suite à contrainte sur le RPT.
+La fin de cette limitation est prévue pour la fin de l'année 2023.
+En attente de CR ENEDIS pour demander l'indemnisation.
+Pertes : 199 MWh, 78505 €.";07/04/2023;;78505;PDL;Plants;GAB1 - PDL
+JADE;Centrale - Télécommunication;closed;Perte de communication sur Jade, en attente de la DSIN. Problème d'accès au SCADA, en attente de Nordex pour vérifier les accès.;24/04/2023;31/05/2023;0;Perte de communcation;Plants;JADE - Perte de communcation
+GAB7;Centrale - Panne;in_progress;"Limitation de production suite à contrainte sur le RPT.
+La fin de cette limitation est prévue pour la fin de l'année 2023.
+En attente de CR ENEDIS pour demander l'indemnisation.
+Pertes : Pertes : 41 MWh, 15681 €.";17/04/2023;;15681;PDL;Plants;GAB7 - PDL
+GAB4;Centrale - Panne;in_progress;"Limitation de production suite à contrainte sur le RPT.
+La fin de cette limitation est prévue pour la fin de l'année 2023.
+En attente de CR ENEDIS pour demander l'indemnisation.
+Pertes : 734 MWh 289750 €.";04/04/2023;;289750;PDL;Plants;GAB4 - PDL
+POUZ;Centrale - Panne;closed;"E5 :Génératrice HS - A remplacer 
+Pas de géné dispo
+
+12/06 : MCR planifié le 23/06 - remise en état géné EGM ";08/05/2023;07/07/2023;13000;Génératrice;Plants;POUZ - Génératrice
+POUZ;Centrale - Panne mineure;closed;E2 : Défaut sur système de pitch. Biellette de pitch et cranck arm à remplacer ;24/04/2023;23/05/2023;7000;Pitch;Plants;POUZ - Pitch
+LANE;Centrale - Panne mineure;closed;Variateur Pitch remplacé sur la WT02;24/04/2023;02/05/2023;6000;Pitch Drive;Plants;LANE - Pitch Drive
+FITO;Centrale - Panne mineure;closed;WT01: Problème de thrystor;17/05/2023;20/05/2023;0;Trystor;Plants;FITO - Trystor
+RAM2;Centrale - Panne;closed;"RAM2 WT04. Machine arrêtée depuis le 16/05.
+
+Le 22/05. Machine à l'arrêt, car le jeu de barre BT du transfo HTA a cassé. Une inspection transfo doit être faite.
+Le 30/05. Idem machine E1.
+Le 05/06. Point équipe maintenance avec le FST S23
+Le 12/06. Point avec le FST ce jour.
+Le 19/06. Devis de MDWIND reçu pour le remplacement du transfo.  55250€ hors pièce. Validation du devis en cours avec Demba.
+Le 26.06. Devis validé. préparation du MCR en cours. Levage prévu le 5/07.
+Le 03/07. Opération prête. Levage prévu le 5/6 juillet.
+Le 10/07. Le MCR s'est bien passé la machine a été relancé le 7/07.";16/05/2023;07/07/2023;44000;transformateur;Plants;RAM2 - transformateur
+BARB;Site - Effraction;closed;Effraction du PDL le 19/05, alarme intrusion à 17h45, parc découplé (mis en local par les auteurs) puis recouplé à 19h30. Eiffage arrive à 20h30 et constate que la porte a été forcée. Pas de dégats à l'intérieur. Porte non endommagée, intervention d'un serrurier prévue pour réparer la partie serrure.;19/05/2023;19/05/2023;0;Effraction;Plants;BARB - Effraction
+AMEL;Centrale - Panne;closed;"WT 5
+11/05: erreur 1102 pitch 3
+22/05: WT tjrs à l'arrêt, MWh perdue 81.63 MWh dont 13 700 euros.
+
+11/05: remote restart failed
+12/05: 15y services
+13/05: 15y services
+15/05: 15y maintenance
+20/05: try to remote restart
+21/05: negative price
+24/05: error of 1102 continued,  Convertisseur pitch3 HS. to be replaced
+25/05: replacement of converter pitch
+Pb of supply chain
+
+perte 17800 euros (161.5MWh)";11/05/2023;25/05/2023;17800;pitch;Plants;AMEL - pitch
+NURL;Centrale - Panne;closed;"WT 5
+11/05: fuite d'huile en attente de commande
+15/05: oil terminé
+---WT à l'arrêt---
+16/05: découvert d'un défaut de pale A (ouverture) => criticité 4-5 lors de l'inspection pales
+16/05: devis Helio Pales 14 167 euros a été validé pour travaux urgents 
+démarrage de réparation lundi 22/05.
+pertes estimées à 54.70 MWh 5300 euros
+
+25/05: travaux terminées, WT redémarré
+12000 euros de pertes (116.5 WMh)";16/05/2023;;12000;pale;Plants;NURL - pale
+RIBE;Centrale - Télécommunication;closed;"16/05: perte de comm sur Sennen
+22/05: le ticket est ouvert dans Easyvid I230522_054
+
+Prblem traité, les doonnées sont revenues qu'à partir du 17 entre le 15 et 16/05=> données perdues";16/05/2023;17/05/2023;0;Communication;Plants;RIBE - Communication
+PAAN;Centrale - Panne mineure;closed;"Alarme d'origne: FM5055 SIS Pit Test required OpC PreAlarm :  L'alarme est générée lorsque l'état du test de Pitch est ""non réussi"".
+L'alarme est automatiquement réinitialisée lorsque l'état est ""Test réussi"". ";19/05/2023;;5500;System de lubrification automatique du pitch;Plants;PAAN - System de lubrification automatique du pitch
+BDBS;Centrale - Télécommunication;closed;S01 & S02 : Perte de communication sur le deuxième PDL de BDBS le 13/05. Découverte d'un découplage le 16/05, et recouplage du second PDL. Vestas n'a pu envoyer une équipe que le lendemain pour relancer les machines.;13/05/2023;17/05/2023;6000;Perte de communication à cause d'un découplage;Plants;BDBS - Perte de communication à cause d'un découplage
+LANE;Centrale - Panne;in_progress;"WT05 stopped cause under diagnosis 
+Interventions du 15/05/23 jusqu'au 07/06/23 diagnostic de panne: défaut détécté, Essai changement rack master, rack reparé défectueux, contole des bales entre convertisseur et des 3 bus barres
+du 27/06/23 au 04/07/2023: EGM_Remp_SlipRing , le slipring remplacé le 04/06 n'est pas le bon (impossible de fixer le carter de ventilation).
+Le 05/07: Remontage slipring, en attente du fusible 50A pour le test
+le 12/07/23 : Montage du nouveau fusible mais le problème est toujours présent";13/05/2023;;54100;Convertisseur;Plants;LANE - Convertisseur
+LANE;Centrale - Panne;closed;Alimentation 400V en court circuit sur la WT01, remplacée le 16/05/23.;12/05/2023;17/05/2023;5600;Alimentation 400V;Plants;LANE - Alimentation 400V
+PAMP;Centrale - Panne;closed;"Remplacement module Phoenix, relais Phoenix et câble balluff WS251G8C G90
+";23/05/2023;25/05/2023;5600;Cable balluff WS251G8C G90;Plants;PAMP - Cable balluff WS251G8C G90
+CONI;Centrale - Coupure  HT;closed;Limitation du poste entre 8h-17h à 8.3MW;25/05/2023;25/05/2023;0;Poste;Plants;CONI - Poste
+FITO;Centrale - Coupure  HT;closed;Prix négatif;27/05/2023;27/05/2023;0;poste;Plants;FITO - poste
+FITO;Centrale - Panne;closed;WT07: Niveau huile bas;20/05/2023;22/05/2023;0;transformateur;Plants;FITO - transformateur
+BARB;Centrale - Coupure  HT;closed;Travaux sur PS Enedis du 22/05 au 25/05.;22/05/2023;25/05/2023;25000;Travaux PS Enedis;Plants;BARB - Travaux PS Enedis
+RAM2;Centrale - Panne mineure;closed;"Eolienne 13 le 25/05
+
+Le 30/05. Slipring et portes charbons de la génératrice HS; Intervention prévu début de semaine.
+Le 05/06. Remplacement du slipring terminé.";25/05/2023;02/06/2023;11000;génératrice;Plants;RAM2 - génératrice
+PEZI;Centrale - Panne;closed;"Le 25/05/2023 à ~6h44, le transformateur TR611 a déclenché. L'équipe de techniciens a identifié 3 départs en défauts, à 3 endroits différents. Il est probable que la foudre ait touché le transfo, et qu'ensuite le courant se soit évacué par 3 points ""faibles"" : une tête de cable, une boite de jonction entre cable, ...
+2 des 3 défauts sont localisés : tête de cable HS dans C4 et défaut sur cable enterré entre le poste HTB et B8.
+- Têtes de cable C4 : réparées le 31/05
+- Défaut entre le poste HTB et B8 : localisée sous une voie communale. Demande faite à la mairie de Baixas pour un arrété d'interdicition de circulation et travaux de réparation commandés. Le défaut était situé au niveau d'une boite de jonction, la réparation du cable a été faite le 08/06/23 et les éoliennes C1, P4, P5, P6, P9 ont été relancées.
+- 3 éme défaut localisé sous une route communale. Réparation effectuée le 23/06/2023 par l'entreprise Madine Electroservice.";25/05/2023;23/06/2023;207000;Foudre;Plants;PEZI - Foudre
+JONC;Centrale - Panne;closed;"La connexion VPN entre BIodivwind et EDF R n'est plus fonctionnelle. Conformément à l'APC, toutes les machines de Mas de Naï sont arrêtées en journée. 
+La DSIN a réalisé des points avec Biodivwind les 24 et 25 mai pour résoudre le problème. Aucune solution n'a encore été trouvée.
+
+19/06/2023 : la communication a été récupérée sur machines, les 6 autres restent à l'arrêt";30/05/2023;27/06/2023;9900;Perte de connexion VPN;Plants;JONC - Perte de connexion VPN
+PCR1;Centrale - Panne mineure;closed;"Perte de com avec la centrale: cable Orange coupé; en attente intervention.
+La centrale fonctionne mais production pas optimisée.";15/05/2023;13/06/2023;0;Cable Orange;Plants;PCR1 - Cable Orange
+POTI;Centrale - Panne;closed;PTR3 à l'arret suite Déclenchement sur défaut pression gaz.;13/05/2023;20/05/2023;10000;Transformateur PTR3;Plants;POTI - Transformateur PTR3
+STMB;Centrale - Panne mineure;closed;Remplacement disjoncteur Q8 et contacteurs K536D et K537;30/05/2023;20/06/2023;10600;Convertisseur;Plants;STMB - Convertisseur
+VANA;Centrale - Panne mineure;closed;"VANA SS01 31/05.
+
+Une tête de cable sur l'arrivée de la machine E4 était fortement dégradée. SETIA à remplacé 3 têtes le 2/06 pour pouvoir redémarrer le parc. Ils remplaceront les 3 dernières têtes le 8/06.
+Le 12/06. Intervention terminée";31/05/2023;08/06/2023;4000;tête de câble HTA;Plants;VANA - tête de câble HTA
+LOPV;Centrale - Panne;closed;Découplage le 03/06 à 18h30. Intervention le 05/06 au matin. Recouplé à 10h30;03/06/2023;05/06/2023;5000;Foudre;Plants;LOPV - Foudre
+MODF;Centrale - Télécommunication;closed;"Prix négatifs les 27/05 et 2805.
+Arrêt à distance réussi, redémarrage à distance raté. 
+Envoi d'une équipe Senvion sur place pour rédémarrer les machines le 30/05.
+
+Pertes calculées via la courbe de puissance théorique en ométant les périodes de prix négatif.
+
+01/02 : Test arrêt/marche à succès réalisé par Yoann Charpentier, du SCADA. Information passée à l'OCC";27/05/2023;30/05/2023;24400;SCADA;Plants;MODF - SCADA
+GOUR;Centrale - Panne mineure;closed;Perte de communication sur la turbine 6 du côté turbinier. Un arrêt n'a ainsi pas été détecté par leur supervision. Communication rétablie et panne solutionnée. La communication avait été coupée suite à un changement d'adresse IP non notifié.;23/05/2023;01/06/2023;11000;Communication;Plants;GOUR - Communication
+TLGR;Centrale - Panne mineure;closed;"Panne sur E03. Identification comme UPS en défaut. Nouvelle panne à la suite du remplacement + No COM.
+Nouvelle identification de la panne en cours (05/06).";28/06/2023;08/06/2023;13000;UPS;Plants;TLGR - UPS
+BARB;Centrale - Coupure  HT;closed;Défaut sur réseau Enedis. Le DEIE n'est plus accessible. Intervention Eiffage pour rénclencher le poste.;04/06/2023;05/06/2023;0;defaut DEIE;Plants;BARB - defaut DEIE
+FREY;Centrale - Télécommunication;closed;"Plus de com avec le parc depuis 04/06 à 6h20. 
+Conduite OMEXOM affirme que tous les départs sont fermés. En attente intervention Vestas. Vestas indique un pb de com orange.
+Ticket créé sur EV pour signalHorn pour checker la communication. En parallèle, demande d'inter à Omexom avec Orange. Fait le vendredi 9/06 à 9h30. 
+Technicien souligne plusieurs coupures de lignes : intervention samedi 10/06 avec camion nacelle. 
+Lundi 12/06 : com toujours pas revenue. Orange indique un problème complexe à régler : 1km de ligne foudroyée. Demande de back up 4g faite.
+Lundi 19/06 : En attendant, discussion avec DSIN sur pourquoi le lien turbinier ne passe pas sur com sat comme prévu. Attente passage Vestas Jeudi sur le parc. 
+Sur EVELER : au moins 4 machines en run. 
+
+Com revenue le 20/06.";05/06/2023;20/06/2023;0;Com;Plants;FREY - Com
+ERIZ;Centrale - Panne mineure;closed;WT03 en arrêt à cause d'un problème de batterie de pitch. Retard d'approvisionnement.;01/06/2023;09/06/2023;10100;Batterie;Plants;ERIZ - Batterie
+STFR1;Centrale - Panne mineure;closed;Installation climatiseur dans le PTR2. ;05/06/2023;16/06/2023;8000;PTR2;Plants;STFR1 - PTR2
+MTAR;Centrale - Panne mineure;closed;S04: Exchange PCB motor control (problème sur moteur de yaw);03/06/2023;05/06/2023;0;Moteur de yaw;Plants;MTAR - Moteur de yaw
+FITO;Centrale - Coupure  HT;closed;Des prix négatifs ont été effectués les 3 et 04/06. Tout est ok.;03/06/2023;04/06/2023;0;Prix negatif;Plants;FITO - Prix negatif
+COUR;Centrale - Panne;closed;"COUR E3.
+
+Défaut d'orientation des pales. Probablement un moteur en défaut.
+Le 19/06. Remplacement des batteries de pitch. Machine en RUN";05/06/2023;12/06/2023;7000;Moteur de pitch;Plants;COUR - Moteur de pitch
+SOUR;Centrale - Coupure  HT;closed;"Conduites Vestas, OCC, et ACR refutent toute implication dans la délivrance d'un signal de coupure.
+
+Le DEIE en délivre pourtant un, TBS.
+
+Redémarrage. Pas d'origine de la cause trouvée.";08/06/2023;14/06/2023;17000;DEIE;Plants;SOUR - DEIE
+LUCO;Centrale - Télécommunication;closed;Communication top bottom box HS ;12/06/2023;28/06/2023;0;Scada ;Plants;LUCO - Scada 
+RIOL;Centrale - Panne;in_progress;"RIOL 1:
+5 goujons cassé sur une même pale  - machine mise à l'arrêt 
+12/06 : Attente retour Izenda pour intervention
+05/07 : retour Izenda , échec extraction de 2 goujons  ; machine reste à l'arrêt ";12/06/2023;;11000;Pale;Plants;RIOL - Pale
+RIOL;Centrale - Panne mineure;closed;"Riols E4 : 1 moteur de yaw retrouvé ouvert en deux
+Machine remise en RUN sur 3 moteurs le 13/06
+";10/06/2023;13/06/2023;1000;Yaw;Plants;RIOL - Yaw
+FRA1, FRA2;Centrale - Panne;closed;Défaut sur boite de jonction de FRA (3WTG) + 1 découplage la journée du 08/06 pour travaux sur PS Enedis;04/06/2023;08/06/2023;6000;Défaut sur boite de jonction;Plants;FRA1, FRA2 - Défaut sur boite de jonction
+MODF;Centrale - Télécommunication;closed;"Perte de comm sur wonder. La conduite a encore accès. 
+Arrêt prix négatifs fonctionnel le 11/06. Accès conduite ok le 12/06.
+
+Ticket I230612_072 ouvert. 16/06 : Sujet clos.";07/06/2023;16/06/2023;0;Scada;Plants;MODF - Scada
+PDCE;Centrale - Panne;closed;"Remplacement de l'encoder générateur et l'encoder balancing.
+Attente de la pièce encoder générateur pendant 2 jours.
+";12/05/2023;16/05/2023;5100;"encoder générateur; encoder balancing";Plants;"PDCE - encoder générateur; encoder balancing"
+MTAR;Centrale - Panne mineure;closed;S03: Changement d'un fusible;11/06/2023;12/06/2023;0;transformateur;Plants;MTAR - transformateur
+FITO;Centrale - Panne mineure;closed;WT09: Arrêt pendant 17h. Cut in overspeed;12/06/2023;13/06/2023;0;Generateur;Plants;FITO - Generateur
+LOMO;Centrale - Panne mineure;closed;Beaucoup de tests, de changements de pièces, mais l'origine de la panne n'est pas encore connue.;11/06/2023;20/06/2023;5000;Unknown;Plants;LOMO - Unknown
+PLAT;Centrale - Télécommunication;closed;"Perte de communication sur SCADA niveau 2 - Wonder.
+After doiong a ticket to wnder we received their feeback: 
+Nordex has replaced all existing certificates (long) before their expiration without prior notice last Wednesday.
+On Thursday, wonder have tried to fix that issue (which affected all Nordex sites wonder clients), but still there was no announcement on the WASP portal nor an updated certificate available for download.
+The certificate was released on Sunday and Nordex was able to download and implement them on tuesday morning.
+";19/06/2023;;0;Possiblement adresse IP du parc;Plants;PLAT - Possiblement adresse IP du parc
+MAG1, MAG3;Centrale - Télécommunication;closed;"Perte de communication sur SCADA niveau 2 - Wonder.
+After doiong a ticket to wnder we received their feeback: 
+Nordex has replaced all existing certificates (long) before their expiration without prior notice last Wednesday.
+On Thursday, wonder have tried to fix that issue (which affected all Nordex sites wonder clients), but still there was no announcement on the WASP portal nor an updated certificate available for download.
+The certificate was released on Sunday and Nordex was able to download and implement them on tuesday morning.
+";15/06/2023;;0;Possiblement l'adresse IP du parc;Plants;MAG1, MAG3 - Possiblement l'adresse IP du parc
+JON2;Centrale - Télécommunication;closed;"Le parc est resté arrêté une semaine suite à une erreur dans la relance des éoliennes après l'épisode de prix négatifs.
+";11/06/2023;18/06/2023;3300;Gestion prix négatifs;Plants;JON2 - Gestion prix négatifs
+COUR;Centrale - Télécommunication;closed;"COUR E5.
+
+Le 26/06. Perte de com depuis le 19/06. Intervention prévu le 26/06.
+Le 07/07. Carte convertisseur HS programation de la nouvelle carte prévu aujourd'hui.";19/06/2023;07/07/2023;14000;convertisseur;Plants;COUR - convertisseur
+COUR;Centrale - Télécommunication;in_progress;"COUR E1.
+
+Le 26/06. Perte de com depuis le 23/06. Intervention prévu le 26/06.
+Le 03/07. La com est revenu avec PI mais toujours pas dans Sennen.
+Le 17/07. Idem
+Le 24/07. Idem";23/06/2023;;2000;com;Plants;COUR - com
+SABL;Centrale - Panne mineure;closed;"Arbre rapide de la gearbox HS. Arrêt préventif de l'éolienne en attente de la pièce de remplacement.
+Pièce reçue et remplacée, machine repartie";23/06/2023;13/07/2023;13000;Gearbox;Plants;SABL - Gearbox
+MANO;Centrale - Panne;in_progress;;26/06/2023;;0;;Plants;MANO - nan
+LANE;Centrale - Panne;closed;"WT03- Converter error - supply delay - 
+1 st load self OS, 2nd self TRANSFO.MR D85 400V/690V changed
+Turbine restarted on the 4th of July";07/06/2023;04/07/2023;12100;Convertisseur;Plants;LANE - Convertisseur
+TAIL;Centrale - Coupure  HT;closed;Coupure sur la ligne HTB, Perte de communication. Intervention des techniciens pour recoupler le poste après autorisation RTE;22/06/2023;22/06/2023;0;Transformateur;Plants;TAIL - Transformateur
+MTAR;Centrale - Coupure  HT;closed;Coupure sur la ligne HTB, Perte de communication. Intervention des techniciens pour recoupler le poste après autorisation RTE;22/06/2023;22/06/2023;0;Transformateur;Plants;MTAR - Transformateur
+FITO;Centrale - Panne mineure;closed;WT02 à l'arrêt pendant 11H.;22/06/2023;22/06/2023;0;hydraulic pressure;Plants;FITO - hydraulic pressure
+FITO;Centrale - Coupure  HT;closed;Prix négatif;25/06/2023;25/06/2023;0;Alerte agregio;Plants;FITO - Alerte agregio
+TAIL;Ancrage - Visite mairie;closed;Rencontre de tous les maires des communes attenant au projet ainsi que le présindet de la communauté de communes en collaboration avec les équipes du dev.;23/06/2023;23/06/2023;0;;Plants;TAIL - nan
+SOUR;Centrale - Panne;closed;Génératrice HS sur la E1. MCR effectué le 3/07.;11/06/2023;07/07/2023;20000;Génératrice;Plants;SOUR - Génératrice
+JON2;Centrale - Panne mineure;closed;"Un défaut sur la carte d'entrée/sortie dédiée au DTbird a loqué la machine sur un arrêt. 
+
+Dépannage Enercon ok; Discussion pour attribuer l'indisponibilité à Enercon.";18/06/2023;28/06/2023;3000;Carte I/O DTbird;Plants;JON2 - Carte I/O DTbird
+QVA3;Centrale - Panne mineure;closed;"QVA3 WT11.
+
+Le 03/07. Un accumulateur s'est décroché dans le hub ce qui a provoqué la dégradation de nombreux composants ainsi qu'une fuite d'huile hydraulique importante. Le kit antipollution a été installé, car de l'huile a coulé sur la tour sur 20 m en partant du sol. Il ne semble pas y avoir d'huile dans la terre, mais j'attends la confirmation de SGRE.
+
+Le 10/07. Les éléments HS dans le HUB ont été remplacés. La machine a redémarré le 7/07.";29/07/2023;;5000;HUB;Plants;QVA3 - HUB
+GOUR;Centrale - Coupure  HT;closed;Limitation 0kW transformée en coupure.;26/06/2023;02/07/2023;14200;Coupure Enedis;Plants;GOUR - Coupure Enedis
+ERIZ;Centrale - Panne mineure;closed;Remplacement du Phase Module du convertisseur sur WT04;07/06/2023;16/06/2023;8900;Phase module;Plants;ERIZ - Phase module
+FITO;Centrale - Coupure  HT;closed;Negative price;02/07/2023;02/07/2023;0;Negative price;Plants;FITO - Negative price
+FITO;Centrale - Panne mineure;closed;WT08: G1 feedback missing. Energie maintenance n'a pas encore trouvé la cause de la faute. (faute récurrente);30/06/2023;01/07/2023;0;capteur;Plants;FITO - capteur
+FITO;Centrale - Panne mineure;closed;WT02: Problme de pression d'huile sur le frein.;25/06/2023;28/06/2023;0;Brake;Plants;FITO - Brake
+CARN;Centrale - Panne;closed;"Disjoncteur du PDL1 HS. 
+Remplacement bobine prévu le 19/07/2023. ";27/06/2023;19/07/2023;180000;Disjoncteur;Plants;CARN - Disjoncteur
+STSI;Centrale - Coupure  HT;closed;"Le parc est limité à 1600 kW depuis le 26/06/2023 par Enedis pour des traveaux sur le réseau jusqu'à la fin du démetèlement du parc (fin aout).
+Consignation du parc le 01/07/2023 pour le démantèlement.";26/06/2023;10/07/2023;0;Limitation réseau;Plants;STSI - Limitation réseau
+CLAM;Centrale - Panne;in_progress;E01 : Problème de pitch. Le chargeur des batteries de pitch a été changé.;29/06/2023;;5000;Problème de pitch;Plants;CLAM - Problème de pitch
+LORO;Centrale - Télécommunication;closed;Le 10/07. Plus de données dans SENNEN depuis le 06/07. PI OK;06/07/2023;17/07/2023;0;SCADA;Plants;LORO - SCADA
+TAIL;Centrale - Panne mineure;closed;"WT09: Faute low power inverter. Remplacement d’une PCB dans une des Power Cabinet
+Bridage de la turbine par Enercon suite à ce problème pendant quelques jours. Bridage levé le 07/07/23";03/07/2023;04/07/2023;0;Inverter;Plants;TAIL - Inverter
+CONI;Centrale - Coupure  HT;closed;Coupure ENEDIS;05/07/2023;05/07/2023;0;grid;Plants;CONI - grid
+TLGR;Centrale - Coupure  HT;closed;Découplage réseau par Enedis. Travaux poste source RTE. Estimations pertes avec P90 ventilé sur le mois de Juin.;26/06/2023;07/07/2023;31300;Enedis;Plants;TLGR - Enedis
+LUC2;Centrale - Coupure  HT;closed;Coupure ENEDIS;05/07/2023;05/07/2023;0;grid;Plants;LUC2 - grid
+FITO;Centrale - Coupure  HT;closed;Negative Price;01/07/2023;02/07/2023;0;Negative Price;Plants;FITO - Negative Price
+TAIL;Centrale - Panne mineure;closed;WT07: 16h d'arret suite à un défaut de terre. reset maintenance OK;13/07/2023;14/07/2023;0;Earth fault;Plants;TAIL - Earth fault
+FITO;Centrale - Coupure  HT;closed;Negative Price;15/07/2023;15/07/2023;0;AGREGIO;Plants;FITO - AGREGIO
+TAIL;Centrale - Inspection ICPE;closed;"Inspection ICPE: Reserve d'eau pompiers avec niveau à la moitié.
+Demande d'informations complémentaires sur SDA.
+
+En attente de réception du rapport.";11/07/2023;11/07/2023;0;ICPE;Plants;TAIL - ICPE
+TLGR;Centrale - Télécommunication;in_progress;Boitier PI HS. Long délai de dépannage.;01/07/2023;;0;PI;Plants;TLGR - PI
+GAR1;Centrale - Télécommunication;in_progress;Perte de communication côté turbinier.;12/07/2023;;0;FAI;Plants;GAR1 - FAI
+BOUS;Centrale - Panne;in_progress;10/07: intervention TBS sans succès;11/07/2023;;0;Main switch error;Plants;BOUS - Main switch error
+CARN;Centrale - Télécommunication;closed;Perte de com;08/07/2023;19/07/2023;0;Com;Plants;CARN - Com
+PAAN;Centrale - Télécommunication;in_progress;Perte de communication entre le serveur du SCADA turbinier (Nordex) et le boitier PI. Etat d'operation des machines inconnu. Un mail de demande  de support a été envoyé à Nordex. Nous attendons une disponibilité de l'equipe technique automatisme pour coordoner une intervention à distance avec Nordex. ;11/07/2023;;0;SCADA;Plants;PAAN - SCADA
+CEFF;Centrale - Télécommunication;closed;"Perte de communication sur CEFF. Ticket n°I230711_065 créé.
+Quelques données remontées par intermitence mais communication non fonctionnelle ce jour.";11/07/2023;20/07/2023;0;SCADA;Plants;CEFF - SCADA
+LEPI;Centrale - Télécommunication;closed;"Perte de communication sur LEPI. Ticket n°I230711_047 créé.
+Quelques données remontées par intermitence mais communication non fonctionnelle ce jour.";11/07/2023;20/07/2023;0;SCADA;Plants;LEPI - SCADA
+NURL;Centrale - Panne;closed;"17/07: aucune donnée remonte dans Sennen, ticket EZV créé : I230717_047
+24/07: ticket clôturé, données remontées";17/07/2023;24/07/2023;0;Scada;Plants;NURL - Scada
+STEN;Centrale - Télécommunication;closed;"No communication with the parc data can't be retrieved. The parc produced.
+VARHD correction without effect, SCADA restart without effect, SCADA starts and stops. Escalation N2SCADA.";26/05/2023;07/06/2023;0;SCADA;Plants;STEN - SCADA
+CDBO;Centrale - Panne mineure;closed;Bade lock;07/07/2023;12/07/2023;5000;Pale;Plants;CDBO - Pale
+VARA;Centrale - Coupure  HT;in_progress;"Limitation Enedis à 2600kW (pour une Pmax à 8,8MW) pour contrainte RTE. 
+Limitation planifiée du 03/07 07h au 01/09 18h";03/07/2023;;20000;Limitation Enedis;Plants;VARA - Limitation Enedis
+JAVI;Site - Campagne acoustique;closed;Campagne de mesure acoustique estivale;10/07/2023;26/07/2023;30000;Acoustique;Plants;JAVI - Acoustique
+SAUV;Centrale - Panne;closed;MCR sur la E2 : remplacement blade bearing par Vestas;12/07/2023;25/07/2023;15000;MCR;Plants;SAUV - MCR
+PLAT;Centrale - Télécommunication;closed;Perte de communication sur Wonder. En cours de reparation. ;05/07/2023;21/07/2023;0;SCADA;Plants;PLAT - SCADA
+JONC;Centrale - Coupure  HT;in_progress;"Travaux Enedis sur poste source.
+Coupure programmée qui fera l'objet d'un dédommagement Enedis (montant à calculer).
+
+Les travaux, initiallement prévus jusqu'au 23/07, ont été prolongés jusqu'au 28/07.";28/06/2023;28/07/2023;147800;Enedis;Plants;JONC - Enedis
+CHAG;Centrale - Panne;in_progress;;17/07/2023;;28000;Dégagement gazeux;Plants;CHAG - Dégagement gazeux
+TOU2;Centrale - Panne;closed;6 baterries hs-> 6 racks hs-> 300kW manquant;28/06/2023;21/07/2023;0;stockage batterie;Plants;TOU2 - stockage batterie
+TRAY;Centrale - Panne;in_progress;Machine E4, réparation provisoire pale en Janvier 2023. Reparation definitive pale en Juillet 2023.;04/07/2023;;37000;Blade damage ;Plants;TRAY - Blade damage 
+CLAN;Centrale - Télécommunication;closed;"Pas de donnée sur PI. 
+PDCC sur le coup. ";09/07/2023;25/07/2023;0;PI;Plants;CLAN - PI
+JON2;Centrale - Télécommunication;closed;Lien Com-Ip hors service depuis le 19/07 après-midi. Les SDA étant injoignables, tout le parc est mis à l'arrêt en journée.;19/07/2023;26/07/2023;8100;Perte de com;Plants;JON2 - Perte de com
+BOUS;Centrale - Panne;in_progress;17/07: Début de réparation pales;17/07/2023;;0;Pales;Plants;BOUS - Pales
+LOMO;Centrale - Panne;closed;Fin arrêt prix négatifs non réussi. ;23/07/2023;24/07/2023;3000;SCADA;Plants;LOMO - SCADA
+TAIL;Centrale - Panne;closed;coupure RTE à notre demande pour SCDEM remplcement coffret sectionneur de ligne;19/07/2023;19/07/2023;0;Controle commande;Plants;TAIL - Controle commande
+SOUR;Centrale - Télécommunication;closed;Pas de remise en run après fin d'arrêts prix négatifs sur le PDL2 Houdelaincourt.;23/07/2023;24/07/2023;10000;SCADA;Plants;SOUR - SCADA
+MACH;Centrale - Panne mineure;in_progress;Machine E2, pale foudroyée. Dégats pas très importants, la machine tourne à présent. Réparation prévue le 27/07/2023. ;27/07/2023;;0;Blades ;Plants;MACH - Blades 
+FITO;Centrale - Panne;closed;WT07: TIP cable Broken. Wind conditions not OK;16/07/2023;20/07/2023;0;Tip cable;Plants;FITO - Tip cable
+CASH;Site - Incident industriel;closed;Arrêt de 3 éoliennes du 14/08 au 18/07 pour rave-party;14/07/2023;18/07/2023;5000;Rave-party;Plants;CASH - Rave-party
+CORS;Centrale - Panne mineure;in_progress;"1 moteur de yaw HS
+pièce en attente de réception , réception prévu le 08/08
+";13/07/2023;;2000;Convertisseur;Plants;CORS - Convertisseur
+LUCO;Centrale - Panne mineure;in_progress;LUCO E7 : commande pièce  le 03/07 P01861 : MOD.ANTISUR.PHOEN.CONT.CT10-1 réceptionnée le 21/07;30/06/2023;;20000;random;Plants;LUCO - random
+RIOL;Centrale - Panne;in_progress;Riols E3 : Gearbox fissurée;22/06/2023;;10000;Gearbox;Plants;RIOL - Gearbox
+BVER;Site - Effraction;in_progress;"Un groupe de personnes s'est introduit dans la machine E05 pour réaliser des sauts de base jump. Les vidéos ont été postées sur Instagram : 
+https://www.instagram.com/reel/CutwlRqMgTQ/
+
+Un dépôt de plainte est en cours.";14/07/2023;31/07/2023;0;Effraction E05;Plants;BVER - Effraction E05
+RIOL;Centrale - Panne;in_progress;"Riols E2 : les 3 moteurs de yaw HS le 30/06
+RCA en cours avant décision si redémarrage";24/07/2023;;7000;Yaw;Plants;RIOL - Yaw
+SACU;Centrale - Panne;in_progress;Roulement pale HS - MCR à venir ;24/07/2023;;80000;roulement pale ;Plants;SACU - roulement pale 
+SAMI;Centrale - Panne mineure;in_progress;Slipring génératrice HS;18/07/2023;;12500;Slipring;Plants;SAMI - Slipring
+BDBS;Centrale - Coupure  HT;closed;L'ensemble des éoliennes du PDL Nord (8 machines) ont été arrêtées pour soucis de couplage au réseau (soucis de phases). Le parc a été recouplé le vendredi 21/07 à 20h, mais les éoliennes ne sont pas reparties.;21/07/2023;24/07/2023;27000;Problème de recouplage réseau;Plants;BDBS - Problème de recouplage réseau
+MA24;Centrale - Panne mineure;in_progress;Problème MA24 SH01 I1. Explosion d'un composant d'un des trois power stack. L'onduleur a donc été mis à l'arret. An attente du remplacement du composant par GSO France Sunny Central.;28/07/2023;;0;Explosion composant;Plants;MA24 - Explosion composant
+TL13;Centrale - Panne mineure;closed;"Panne TL13-SH0-I1 onduleur à l'arrêt. Pièce ""power stack HS"". Composant de l'onduleur SMA. SMA doit intervenir pour le remplacement.";07/07/2023;13/07/2023;0;Power Stack HS;Plants;TL13 - Power Stack HS
+LOMO;Centrale - Télécommunication;in_progress;Perte de communication côté turbinier.;31/07/2023;;0;FAI;Plants;LOMO - FAI
+SOUR;Centrale - Télécommunication;in_progress;Perte de communication SOUR 2 Houdelaincourt.;28/07/2023;;0;Unkown;Plants;SOUR - Unkown
+PLOS;Centrale - Coupure  HT;closed;Coupure Enedis pour travaux le 27/07;27/07/2023;27/07/2023;5000;Coupure Enedis;Plants;PLOS - Coupure Enedis
+JONC;Centrale - Télécommunication;in_progress;L'odre de fin de consigne P0 a été transmis par Enedis le 28/07 à 12h48 et a bien été reçu par l'automate poste. Cependant l'odre n'est pas parvenu au Scada et les machines sont restées à l'arrêt.;28/07/2023;;1500;Scada - DEIE;Plants;JONC - Scada - DEIE
+STFR1;Centrale - Panne;in_progress;"Le pont de diodes de l'onduleur n°3 du PTR2 est hs. A remplacer 18k€. Egelement la carte CIM hs; 6k€.
+Pièces commandées chez Siemens; livraison sous 15 jours.";26/07/2023;;2000;onduleur3 PTR2;Plants;STFR1 - onduleur3 PTR2

@@ -1,0 +1,153 @@
+Plant ID;Date (start);Interval;Meter;Value
+ROUS;01/01/2022;Monthly;Availability;97.38366
+ROUS;01/02/2022;Monthly;Availability;95.36868
+ROUS;01/03/2022;Monthly;Availability;99.14178
+ROUS;01/04/2022;Monthly;Availability;96.92166
+ROUS;01/05/2022;Monthly;Availability;97.98258
+ROUS;01/06/2022;Monthly;Availability;79.82128
+ROUS;01/07/2022;Monthly;Availability;96.40268
+ROUS;01/08/2022;Monthly;Availability;99.3564
+ROUS;01/09/2022;Monthly;Availability;97.00091
+ROUS;01/10/2022;Monthly;Availability;99.26035
+ROUS;01/11/2022;Monthly;Availability;99.27302
+ROUS;01/12/2022;Monthly;Availability;99.5611
+ROUS;01/01/2023;Monthly;Availability;99.85104
+ROUS;01/02/2023;Monthly;Availability;99.63944
+ROUS;01/03/2023;Monthly;Availability;99.57852
+ROUS;01/04/2023;Monthly;Availability;95.68162
+ROUS;01/05/2023;Monthly;Availability;98.53054
+ROUS;01/06/2023;Monthly;Availability;97.04862
+ROUS;01/07/2023;Monthly;Availability;98.43418
+ROUS;01/01/2022;Monthly;Consumption;603.294
+ROUS;01/02/2022;Monthly;Consumption;345.158
+ROUS;01/03/2022;Monthly;Consumption;1418.946
+ROUS;01/04/2022;Monthly;Consumption;2008.377
+ROUS;01/05/2022;Monthly;Consumption;2774.361
+ROUS;01/06/2022;Monthly;Consumption;4695.511
+ROUS;01/07/2022;Monthly;Consumption;6984.613
+ROUS;01/08/2022;Monthly;Consumption;9857.139
+ROUS;01/09/2022;Monthly;Consumption;15060.284
+ROUS;01/10/2022;Monthly;Consumption;12384.333
+ROUS;01/11/2022;Monthly;Consumption;763.492
+ROUS;01/12/2022;Monthly;Consumption;3361.911
+ROUS;01/01/2023;Monthly;Consumption;60659.259
+ROUS;01/02/2023;Monthly;Consumption;99.929
+ROUS;01/03/2023;Monthly;Consumption;1475.329
+ROUS;01/04/2023;Monthly;Consumption;1863.631
+ROUS;01/05/2023;Monthly;Consumption;4340.332
+ROUS;01/06/2023;Monthly;Consumption;422.618
+ROUS;01/07/2023;Monthly;Consumption;-0.197
+ROUS;01/01/2022;Monthly;Gross Generation;2928423.584
+ROUS;01/02/2022;Monthly;Gross Generation;3358862.395
+ROUS;01/03/2022;Monthly;Gross Generation;4193926.144
+ROUS;01/04/2022;Monthly;Gross Generation;2680026.565
+ROUS;01/05/2022;Monthly;Gross Generation;1974819.953
+ROUS;01/06/2022;Monthly;Gross Generation;1173369.625
+ROUS;01/07/2022;Monthly;Gross Generation;1703691.905
+ROUS;01/08/2022;Monthly;Gross Generation;1624810.844
+ROUS;01/09/2022;Monthly;Gross Generation;1900653.452
+ROUS;01/10/2022;Monthly;Gross Generation;4141087.49
+ROUS;01/11/2022;Monthly;Gross Generation;4401757.156
+ROUS;01/12/2022;Monthly;Gross Generation;4713389.463
+ROUS;01/01/2023;Monthly;Gross Generation;3387705.053
+ROUS;01/02/2023;Monthly;Gross Generation;2662232.947
+ROUS;01/03/2023;Monthly;Gross Generation;4408069.816
+ROUS;01/04/2023;Monthly;Gross Generation;3084424.794
+ROUS;01/05/2023;Monthly;Gross Generation;2761339.642
+ROUS;01/06/2023;Monthly;Gross Generation;1224551.992
+ROUS;01/07/2023;Monthly;Gross Generation;1597312.328
+ROUS;01/01/2022;Monthly;OEM Availability;97.38366
+ROUS;01/02/2022;Monthly;OEM Availability;95.36868
+ROUS;01/03/2022;Monthly;OEM Availability;99.14178
+ROUS;01/04/2022;Monthly;OEM Availability;96.92166
+ROUS;01/05/2022;Monthly;OEM Availability;97.98258
+ROUS;01/06/2022;Monthly;OEM Availability;79.82128
+ROUS;01/07/2022;Monthly;OEM Availability;96.40268
+ROUS;01/08/2022;Monthly;OEM Availability;99.3564
+ROUS;01/09/2022;Monthly;OEM Availability;97.00091
+ROUS;01/10/2022;Monthly;OEM Availability;99.26035
+ROUS;01/11/2022;Monthly;OEM Availability;99.27302
+ROUS;01/12/2022;Monthly;OEM Availability;99.5611
+ROUS;01/01/2023;Monthly;OEM Availability;99.85104
+ROUS;01/02/2023;Monthly;OEM Availability;99.63944
+ROUS;01/03/2023;Monthly;OEM Availability;99.57852
+ROUS;01/04/2023;Monthly;OEM Availability;95.68162
+ROUS;01/05/2023;Monthly;OEM Availability;98.53054
+ROUS;01/06/2023;Monthly;OEM Availability;97.04862
+ROUS;01/07/2023;Monthly;OEM Availability;98.43418
+ROUS;01/01/2022;Monthly;Operational Hours;12058319.72
+ROUS;01/02/2022;Monthly;Operational Hours;11452287.56
+ROUS;01/03/2022;Monthly;Operational Hours;12705437.12
+ROUS;01/04/2022;Monthly;Operational Hours;11459721.68
+ROUS;01/05/2022;Monthly;Operational Hours;11922470.71
+ROUS;01/06/2022;Monthly;Operational Hours;9003816.45
+ROUS;01/07/2022;Monthly;Operational Hours;10571393.52
+ROUS;01/08/2022;Monthly;Operational Hours;10246708.0
+ROUS;01/09/2022;Monthly;Operational Hours;7873722.66
+ROUS;01/10/2022;Monthly;Operational Hours;12026366.01
+ROUS;01/11/2022;Monthly;Operational Hours;12682144.96
+ROUS;01/12/2022;Monthly;Operational Hours;13084985.51
+ROUS;01/01/2023;Monthly;Operational Hours;9689186.87
+ROUS;01/02/2023;Monthly;Operational Hours;12025498.68
+ROUS;01/03/2023;Monthly;Operational Hours;12673957.65
+ROUS;01/04/2023;Monthly;Operational Hours;11708877.3
+ROUS;01/05/2023;Monthly;Operational Hours;11504807.7
+ROUS;01/06/2023;Monthly;Operational Hours;10474213.34
+ROUS;01/07/2023;Monthly;Operational Hours;9955794.13
+ROUS;01/01/2022;Monthly;Production;2928423.584
+ROUS;01/02/2022;Monthly;Production;3358862.395
+ROUS;01/03/2022;Monthly;Production;4193926.144
+ROUS;01/04/2022;Monthly;Production;2680026.565
+ROUS;01/05/2022;Monthly;Production;1974819.953
+ROUS;01/06/2022;Monthly;Production;1173369.625
+ROUS;01/07/2022;Monthly;Production;1703691.905
+ROUS;01/08/2022;Monthly;Production;1624810.844
+ROUS;01/09/2022;Monthly;Production;1900653.452
+ROUS;01/10/2022;Monthly;Production;4141087.49
+ROUS;01/11/2022;Monthly;Production;4401757.156
+ROUS;01/12/2022;Monthly;Production;4713389.463
+ROUS;01/01/2023;Monthly;Production;3387705.053
+ROUS;01/02/2023;Monthly;Production;2662232.947
+ROUS;01/03/2023;Monthly;Production;4408069.816
+ROUS;01/04/2023;Monthly;Production;3084424.794
+ROUS;01/05/2023;Monthly;Production;2761339.642
+ROUS;01/06/2023;Monthly;Production;1224551.992
+ROUS;01/07/2023;Monthly;Production;1597312.328
+ROUS;01/01/2022;Monthly;Wind Speed;4.88
+ROUS;01/02/2022;Monthly;Wind Speed;5.5248
+ROUS;01/03/2022;Monthly;Wind Speed;5.7878
+ROUS;01/04/2022;Monthly;Wind Speed;4.9698
+ROUS;01/05/2022;Monthly;Wind Speed;4.2226
+ROUS;01/06/2022;Monthly;Wind Speed;3.9684
+ROUS;01/07/2022;Monthly;Wind Speed;4.072
+ROUS;01/08/2022;Monthly;Wind Speed;4.1348
+ROUS;01/09/2022;Monthly;Wind Speed;4.7072
+ROUS;01/10/2022;Monthly;Wind Speed;6.1572
+ROUS;01/11/2022;Monthly;Wind Speed;6.1282
+ROUS;01/12/2022;Monthly;Wind Speed;6.281
+ROUS;01/01/2023;Monthly;Wind Speed;6.304
+ROUS;01/02/2023;Monthly;Wind Speed;4.8778
+ROUS;01/03/2023;Monthly;Wind Speed;6.3244
+ROUS;01/04/2023;Monthly;Wind Speed;5.3792
+ROUS;01/05/2023;Monthly;Wind Speed;5.0752
+ROUS;01/06/2023;Monthly;Wind Speed;3.8856
+ROUS;01/07/2023;Monthly;Wind Speed;4.4202
+ROUS;01/01/2022;Monthly;Wind Theoretical Production;3180605.007
+ROUS;01/02/2022;Monthly;Wind Theoretical Production;3602837.723
+ROUS;01/03/2022;Monthly;Wind Theoretical Production;4322806.309
+ROUS;01/04/2022;Monthly;Wind Theoretical Production;2994309.123
+ROUS;01/05/2022;Monthly;Wind Theoretical Production;2209746.803
+ROUS;01/06/2022;Monthly;Wind Theoretical Production;1850729.513
+ROUS;01/07/2022;Monthly;Wind Theoretical Production;2248870.052
+ROUS;01/08/2022;Monthly;Wind Theoretical Production;2164459.273
+ROUS;01/09/2022;Monthly;Wind Theoretical Production;2809941.683
+ROUS;01/10/2022;Monthly;Wind Theoretical Production;4976334.847
+ROUS;01/11/2022;Monthly;Wind Theoretical Production;4688879.652
+ROUS;01/12/2022;Monthly;Wind Theoretical Production;4942419.389
+ROUS;01/01/2023;Monthly;Wind Theoretical Production;4801284.343
+ROUS;01/02/2023;Monthly;Wind Theoretical Production;2783207.259
+ROUS;01/03/2023;Monthly;Wind Theoretical Production;5138836.845
+ROUS;01/04/2023;Monthly;Wind Theoretical Production;3386656.734
+ROUS;01/05/2023;Monthly;Wind Theoretical Production;3174790.675
+ROUS;01/06/2023;Monthly;Wind Theoretical Production;1655737.075
+ROUS;01/07/2023;Monthly;Wind Theoretical Production;2316892.785
