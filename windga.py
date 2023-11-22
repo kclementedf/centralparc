@@ -1,6 +1,7 @@
 #%%
 import os
 import re
+from sys import platform
 
 import pandas as pd
 from rapidfuzz import fuzz
@@ -39,12 +40,20 @@ limit_scope_to = None
 # "VARA",
 # ]
 
-data_folder_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\01.Snapshot"
-export_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\03.Bluepoint import data"
-objet_type_to_bluepoint_config_file = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\03 - Paramètrage\parametrage_objets.xlsx"
+# Set this varaibles differently for windows and linux
+
+if platform == "windows":
+    data_folder_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\01.Snapshot"
+    export_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\03.Bluepoint import data"
+    objet_type_to_bluepoint_config_file = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\03 - Paramètrage\parametrage_objets.xlsx"
+
+if platform == "linux":
+    data_folder_path = r"/home/EDF/centralparc/01.Snapshot"
+    export_path = r"//home/EDF/centralparc/03.Import data/01.Brut"
+    objet_type_to_bluepoint_config_file = r"/home/EDF/centralparc/parametrage_objets.xlsx"
 
 correpondance_id_df = pd.read_excel(
-    r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\correspondance_identifiants_plateforme.xlsx",
+    r"correspondance_identifiants_plateforme.xlsx",
     header=1,
 )
 
@@ -175,7 +184,9 @@ contrat_interlocuteur = pd.read_excel(os.path.join(data_folder_path, "contrat_in
 
 sap_company_df = pd.read_excel(os.path.join(
     data_folder_path, 
-    r"SAP\livraison 202310\Extraction Central Parc_API Companies BP.xlsx"
+    "SAP",
+    "livraison 202310",
+    "Extraction Central Parc_API Companies BP.xlsx"
     ),
     sheet_name="API Companies BP")
 
@@ -295,7 +306,9 @@ centrale_df = centrale_interlocuteur_df[centrale_interlocuteur_df["FLG_ACTIF"]][
 sap_project_company_df = pd.read_excel(
     os.path.join(
         data_folder_path,
-        r"SAP\livraison 202310\Extractions Central Parc_API Companies code.xlsx"
+        "SAP",
+        "livraison 202310",
+        "Extractions Central Parc_API Companies code.xlsx"
     ),
     sheet_name="API Companies code"
 )
@@ -400,7 +413,8 @@ centrale_to_bluepoint = {
         "Country": "Country",
         "PUISSANCE_RACCORDEMENT": "Capacity AC",
         "Portfolios": "Portfolios",
-        "Company Name": "Project Company"
+        "Company Name": "Project Company",
+        "Asset Manager": "Asset Manager",
 }
 
 import_plant_df = import_plant_df.rename(columns=centrale_to_bluepoint)[list(centrale_to_bluepoint.values())]
@@ -497,6 +511,14 @@ import_contract_df = import_contract_df.dropna(subset=["Contract Type"])
 #              index=False,
 #              #date_format="%d/%m/%Y"
 #              )
+
+import_contract_df = import_contract_df.drop_duplicates(
+    subset=["Plant Identifier", "Contract Type", "Start Date", "End Date"]
+    )
+
+import_contract_df["Service Description"] = import_contract_df["Service Description"].str.replace(r"\r\n", " ")
+import_contract_df["Service Description"] = import_contract_df["Service Description"].str.replace("\r\n", " ")
+
 import_contract_df.to_excel(
              os.path.join(export_path, f"10.contract.xlsx"),
              index=False,
@@ -642,23 +664,39 @@ event_to_bluepoint = {
 
 #%% Meters
 meters_to_bluepoint = {
-        "CODE_PI": "Plant ID",
+        "Interval": "Interval",
+        "Plant ID": "Plant ID",
         "LIBELLE_TYPE_PROJET": "LIBELLE_TYPE_PROJET",
         # "Meter": "Meter",
+        # "ID_PRODUCTIBLE_REEL_MENSUEL": "",
         "PERIODE_MENSUELLE": "Date (start)",
+        "PRODUCTION": "Export",
+        "GISEMENT": "Resource",
         # "REVENU": "Total Revenue",
         "TEMPERATURE": "Ambient Temp",
-        "PRODUCTION": "Export",
-        "Interval": "Interval",
-        "GISEMENT": "Ressource",
+        # "ID_CENTRALE": "",
+        #"ID_TYPE_PROD_CONTRACTUEL": "",
+        #"ID_PRODUCTIBLE_REEL_MENSUEL_DETAIL": "",
+        #"ID_EQUIPEMENT_MATERIEL": "",
+        # "DISPO_I1": "",
+        # "DISPO_I2": "",
+        # "DISPO_I3": "",
+        # "DISPO_I4": "",
+        # "DISPO_I5": "",
+        # "DISPO_I6": "",
+        # "DISPO_I7": "",
         "DISPO_SAISIE": "OEM Availability",
-        "DISPO_TECHNIQUE_SAISI": "Availability",
         # "PTHD": "",
         "PTH": "Weather Adjusted Production",
-        "PR_SAISI": "Performance Ratio",   
+        "DISPO_ENERGIE_SAISIE": "Availability",
+        #"ERPR": "",
+        #"IRPR": "",
+        "PR_SAISI": "Performance Ratio",
+        # "DATE_VALID_DISPO_CONTRACTUELLE": "",
+        "DISPO_TECHNIQUE_SAISI": "Availability",        
 }
 
-import_meter_df = centrale_df[["ID_CENTRALE", "CODE_PI", "LIBELLE_TYPE_PROJET"]].merge(
+import_meter_df = centrale_df[["ID_CENTRALE", "LIBELLE_TYPE_PROJET", "Plant ID"]].merge(
     productible_reel_mensuel_df,
     left_on=["ID_CENTRALE"],
     right_on=["ID_CENTRALE"],
@@ -682,8 +720,8 @@ import_meter_df = pd.melt(
 
 import_meter_df["Value"] = import_meter_df["Value"].astype(float).round(5)
 
-import_meter_df.loc[(import_meter_df["LIBELLE_TYPE_PROJET"]=="Eolien") & (import_meter_df["Meter"]=="Ressource"), "Meter"] = "Wind speed"
-import_meter_df.loc[(import_meter_df["LIBELLE_TYPE_PROJET"]=="PV Sol") & (import_meter_df["Meter"]=="Ressource"), "Meter"] = "Irradiation"
+import_meter_df.loc[(import_meter_df["LIBELLE_TYPE_PROJET"]=="Eolien") & (import_meter_df["Meter"]=="Resource"), "Meter"] = "Wind speed"
+import_meter_df.loc[(import_meter_df["LIBELLE_TYPE_PROJET"]=="PV Sol") & (import_meter_df["Meter"]=="Resource"), "Meter"] = "Irradiation"
 
 # import_meter_df[import_meter_df["Plant ID"]=="ROUS"].drop(columns=["LIBELLE_TYPE_PROJET"]).to_excel(
 import_meter_df[import_meter_df["Date (start)"].dt.year == 2023].drop(columns=["LIBELLE_TYPE_PROJET"]).to_excel(
@@ -699,3 +737,5 @@ import_meter_df[import_meter_df["Date (start)"].dt.year == 2023].drop(columns=["
 # single_meter_plant = 
 
 # productible_theorique_df
+
+#%% Export

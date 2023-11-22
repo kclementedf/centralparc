@@ -4,14 +4,31 @@ Stratégie migration
 ## Paramètrage plateforme
 Ajout des types de contrats / events / milestone / portoflio
 
+__Spec__ : 
+
+__Fichiers__ : -
 ## Ajout des entreprises
 Reprise extract SAP. Formater les noms en _title case_
 
+__Fichiers__ : 
+- 01.company.xlsx
+
 ## Ajout des contacts
 Injecter la liste du personnel Omega + fonctions + entreprise
+Récupérer la liste des contacts standards de certains presta : 
+- ACR / ARD Enedis
+- RTE ?
+- ?
+
+
 Puis, par groupe de GA : 
 - faire ajouter les contacts associés à chaque parc en mettant à disposition les contacts donnés par les GA précédents
 - injecter les nouveaux contacts dans Bluepoint
+
+__Fichiers__ : 
+- 02.contacts_edf_r.xlsx
+- 03.contacts_externes_standard.xlsx
+- 05.centrales_contacts.xlsx
 
 ## Ajout des centrales
 Faire valider le fichier _plants_ par groupe de GA (et compléter au besoin)
@@ -19,6 +36,10 @@ Ajouter les contacts donnés précédemment
 Injecter les centrales + emplacements avec un tag "à vérifier" et avec le portefeuille "général"
 
 Injecter les centrales virtuelles dans le protfeuille "facturation" ?
+
+__Fichiers__ : 
+- 04.plants_solar.xlsx
+- 04.plants_wind.xlsx
 
 ## Ajout des équipements / composants
 Récupérer : 

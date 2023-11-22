@@ -1,5 +1,17 @@
 import requests
 import pandas as pd
+from sys import platform
+
+if platform == "windows":
+    data_folder_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\01.Snapshot"
+    export_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\03.Bluepoint import data"
+    objet_type_to_bluepoint_config_file = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\03 - Paramètrage\parametrage_objets.xlsx"
+
+if platform == "linux":
+    data_folder_path = r"/home/EDF/centralparc/01.Snapshot"
+    export_path = r"//home/EDF/centralparc/03.Import data/01.Brut"
+    objet_type_to_bluepoint_config_file = r"/home/EDF/centralparc/parametrage_objets.xlsx"
+
 
 conformite_list_df = pd.read_excel(
     r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\03 - Paramètrage\parametrage_objets.xlsx",

@@ -1,0 +1,6 @@
+pandas
+ipykernel
+openpyxl
+rapidfuzz
+fastparquet
+splink
