@@ -50,6 +50,7 @@ Récupérer :
 
 Donner à chaque groupe de GA : 
 - la liste ses équipements principaux + modèle
+- fichier excel = une feuille par centrale
 
 __Faire valider les modèles sur le même modèle que les contacts__
 Mettre à disposition le fichier pour récupérer les données autre sur l'éolien des GA -> pré-remplir avec les équipements de sécurité mais données pas terrible
