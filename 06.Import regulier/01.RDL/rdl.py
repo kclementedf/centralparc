@@ -14,31 +14,31 @@ end_date = "2023-11-30"
 
 limit_scope_to = None
 
-limit_scope_to = [
-"ANPA",
-"BVER",
-"JON2",
-"JONC",
-"ROUS",
-"CY1X",
-"FIEN",
-"MA2X",
-"TL1X",
-"PEZX",
-"CHPI",
-"TL1X",
-"MA24",
-"CY1X",
-"CY1X",
-"BRIA",
-"COLB",
-"NITR",
-"JAVI",
-"LEMO",
-"SALL",
-"COTX",
-"VARA",
-]
+# limit_scope_to = [
+# "ANPA",
+# "BVER",
+# "JON2",
+# "JONC",
+# "ROUS",
+# "CY1X",
+# "FIEN",
+# "MA2X",
+# "TL1X",
+# "PEZX",
+# "CHPI",
+# "TL1X",
+# "MA24",
+# "CY1X",
+# "CY1X",
+# "BRIA",
+# "COLB",
+# "NITR",
+# "JAVI",
+# "LEMO",
+# "SALL",
+# "COTX",
+# "VARA",
+# ]
 
 if platform == "windows":
     data_folder_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\01.Snapshot"
@@ -197,10 +197,10 @@ cont_monthly_device = []
 for project in tqdm.tqdm(project_list):
     try:
         cont_monthly_device.append(
-            rdl_api.contractual_monthly_asset(
-                 project["project_code"],
+            rdl_api.contractual_monthly_asset(                 
                 start_date,
                 end_date,
+                project["project_code"],
                 # attributes=[attr["code"] for attr in cont_monthly_attr],
                 attributes=cont_monthly_attr,
                 output_type="json",
@@ -283,11 +283,18 @@ all_merged_df = pd.melt(
     value_name="Value",
 ).dropna(subset=["Value"])
 
+all_merged_df.loc[
+    all_merged_df["Meter"].isin(["OEM Availability", "Availability"]), 
+    "Value"] = all_merged_df.loc[
+    all_merged_df["Meter"].isin(["OEM Availability", "Availability"]), 
+    "Value"]*100
+
 all_merged_df["Value"] = (
     all_merged_df["Value"].astype(float).round(5)
 )
+
 all_merged_df.to_excel(os.path.join(
-    r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\centralparc\06.Import regulier\01.RDL\01.Brut",
+    "/home/EDF/centralparc/06.Import regulier/01.RDL/01.Brut",
     f"scada_{start_date.replace('-', '')}_{end_date.replace('-', '')}.xlsx"
 ),
 index=False
