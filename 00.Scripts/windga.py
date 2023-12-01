@@ -171,8 +171,13 @@ productible_reel_mensuel_df = pd.read_excel(os.path.join(
 productible_reel_mensuel_df["PERIODE_MENSUELLE"] = pd.to_datetime(
     productible_reel_mensuel_df["PERIODE_MENSUELLE"])
 
-productible_reel_mensuel_detail_df = pd.read_parquet(os.path.join(
-    data_folder_path, "productible_reel_mensuel_detail.parquet"))
+# productible_reel_mensuel_detail_df = pd.read_parquet(os.path.join(data_folder_path, "productible_reel_mensuel_detail.parquet"))
+productible_reel_mensuel_detail_df = pd.read_excel(os.path.join(
+    data_folder_path, 
+    r"productible_reel_mensuel_detail.xlsx"
+    ))
+productible_reel_mensuel_detail_df["PERIODE_MENSUELLE"] = pd.to_datetime(productible_reel_mensuel_detail_df["PERIODE_MENSUELLE"])
+
 
 interlocuteur_df = pd.read_parquet(os.path.join(
     data_folder_path, "interlocuteur.parquet"))
@@ -502,10 +507,10 @@ contrat_df = contrat_df.merge(
     right_on=["ID_INTERLOCUTEUR"],
     how="left"
 )
-# %%
+#%%
 # cross = contrat_df[['ID_CONTRAT', "RAISON_SOCIALE"]].merge(sap_company_df[['Company Name']].rename(columns={"Company Name": "Vendor"}), how='cross')
 # cross['match_acc'] = cross.apply(lambda x: fuzz.ratio(x["RAISON_SOCIALE"], x["Vendor"]), axis=1)
-# # contrat_df =
+# # contrat_df = 
 # contrat_df = contrat_df.merge(
 #     cross.sort_values(["ID_CONTRAT", "match_acc"], ascending=[True, False]).drop_duplicates(["ID_CONTRAT"])[["ID_CONTRAT", "Vendor"]],
 #     how='left'
@@ -764,8 +769,10 @@ import_meter_df = centrale_df[["ID_CENTRALE", "LIBELLE_TYPE_PROJET", "Plant ID"]
 
 import_meter_df["Interval"] = "Monthly"
 
-import_meter_df = import_meter_df[list(meters_to_bluepoint.keys())].rename(
-    columns=meters_to_bluepoint)
+import_meter_df = import_meter_df[list(meters_to_bluepoint.keys())].rename(columns=meters_to_bluepoint)
+import_meter_df["Availability"] = import_meter_df["Availability"] * 100
+import_meter_df["OEM Availability"] = import_meter_df["OEM Availability"] * 100
+
 import_meter_df = pd.melt(
     import_meter_df,
     id_vars=["Plant ID", "Date (start)", "Interval", "LIBELLE_TYPE_PROJET"],
