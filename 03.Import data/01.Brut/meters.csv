@@ -1,0 +1,645 @@
+Plant ID;Date (start);Interval;Meter;Value
+LBDF;01/01/2022;Monthly;Availability;98.40731
+LDTE;01/01/2022;Monthly;Availability;96.865
+MACH;01/01/2022;Monthly;Availability;96.49221
+TRAY;01/01/2022;Monthly;Availability;84.87721
+LBDF;01/02/2022;Monthly;Availability;99.97468
+LDTE;01/02/2022;Monthly;Availability;97.2482
+MACH;01/02/2022;Monthly;Availability;96.79554
+TRAY;01/02/2022;Monthly;Availability;94.86788
+LBDF;01/03/2022;Monthly;Availability;99.9812
+LDTE;01/03/2022;Monthly;Availability;98.43591
+MACH;01/03/2022;Monthly;Availability;99.22501
+TRAY;01/03/2022;Monthly;Availability;98.45467
+LBDF;01/04/2022;Monthly;Availability;90.60412
+LDTE;01/04/2022;Monthly;Availability;93.31884
+MACH;01/04/2022;Monthly;Availability;92.27274
+TRAY;01/04/2022;Monthly;Availability;95.55457
+LBDF;01/05/2022;Monthly;Availability;96.60465
+LDTE;01/05/2022;Monthly;Availability;98.97752
+MACH;01/05/2022;Monthly;Availability;92.52752
+TRAY;01/05/2022;Monthly;Availability;94.5597
+LBDF;01/06/2022;Monthly;Availability;97.79161
+LDTE;01/06/2022;Monthly;Availability;97.94053
+MACH;01/06/2022;Monthly;Availability;82.07254
+TRAY;01/06/2022;Monthly;Availability;68.71583
+LBDF;01/07/2022;Monthly;Availability;98.15743
+LDTE;01/07/2022;Monthly;Availability;99.2673
+MACH;01/07/2022;Monthly;Availability;92.4739
+TRAY;01/07/2022;Monthly;Availability;85.1782
+LBDF;01/08/2022;Monthly;Availability;95.71809
+LDTE;01/08/2022;Monthly;Availability;98.88849
+MACH;01/08/2022;Monthly;Availability;94.01772
+TRAY;01/08/2022;Monthly;Availability;92.83449
+LBDF;01/09/2022;Monthly;Availability;99.40501
+LDTE;01/09/2022;Monthly;Availability;97.47106
+MACH;01/09/2022;Monthly;Availability;95.49245
+TRAY;01/09/2022;Monthly;Availability;87.74994
+LBDF;01/10/2022;Monthly;Availability;98.26922
+LDTE;01/10/2022;Monthly;Availability;99.30454
+MACH;01/10/2022;Monthly;Availability;86.93517
+TRAY;01/10/2022;Monthly;Availability;79.63941
+LBDF;01/11/2022;Monthly;Availability;97.33042
+LDTE;01/11/2022;Monthly;Availability;96.38032
+MACH;01/11/2022;Monthly;Availability;91.41822
+TRAY;01/11/2022;Monthly;Availability;99.61419
+LBDF;01/12/2022;Monthly;Availability;98.40865
+LDTE;01/12/2022;Monthly;Availability;99.93239
+MACH;01/12/2022;Monthly;Availability;97.834
+TRAY;01/12/2022;Monthly;Availability;94.8245
+LBDF;01/01/2023;Monthly;Availability;98.91639
+LDTE;01/01/2023;Monthly;Availability;100.0
+MACH;01/01/2023;Monthly;Availability;96.0759
+TRAY;01/01/2023;Monthly;Availability;98.9089
+LBDF;01/02/2023;Monthly;Availability;99.61635
+LDTE;01/02/2023;Monthly;Availability;100.0
+MACH;01/02/2023;Monthly;Availability;98.74617
+TRAY;01/02/2023;Monthly;Availability;87.66463
+LBDF;01/03/2023;Monthly;Availability;99.05827
+LDTE;01/03/2023;Monthly;Availability;100.0
+MACH;01/03/2023;Monthly;Availability;92.92527
+TRAY;01/03/2023;Monthly;Availability;97.1306
+LBDF;01/04/2023;Monthly;Availability;97.96718
+LDTE;01/04/2023;Monthly;Availability;100.0
+MACH;01/04/2023;Monthly;Availability;94.38633
+TRAY;01/04/2023;Monthly;Availability;94.42706
+LBDF;01/05/2023;Monthly;Availability;97.21153
+LDTE;01/05/2023;Monthly;Availability;100.0
+MACH;01/05/2023;Monthly;Availability;97.20899
+TRAY;01/05/2023;Monthly;Availability;98.37793
+LBDF;01/06/2023;Monthly;Availability;97.95617
+LDTE;01/06/2023;Monthly;Availability;100.0
+MACH;01/06/2023;Monthly;Availability;98.23806
+TRAY;01/06/2023;Monthly;Availability;93.8541
+LBDF;01/07/2023;Monthly;Availability;96.26227
+LDTE;01/07/2023;Monthly;Availability;100.0
+MACH;01/07/2023;Monthly;Availability;95.42579
+TRAY;01/07/2023;Monthly;Availability;72.6668
+LBDF;01/01/2022;Monthly;Consumption;-8525.851
+LDTE;01/01/2022;Monthly;Consumption;-2800.074
+MACH;01/01/2022;Monthly;Consumption;-1786.08
+TRAY;01/01/2022;Monthly;Consumption;-1787.968
+LBDF;01/02/2022;Monthly;Consumption;-5059.603
+LDTE;01/02/2022;Monthly;Consumption;-2517.108
+MACH;01/02/2022;Monthly;Consumption;-964.416
+TRAY;01/02/2022;Monthly;Consumption;-1547.192
+LBDF;01/03/2022;Monthly;Consumption;-5703.087
+LDTE;01/03/2022;Monthly;Consumption;-2129.315
+MACH;01/03/2022;Monthly;Consumption;-374.516
+TRAY;01/03/2022;Monthly;Consumption;-1039.62
+LBDF;01/04/2022;Monthly;Consumption;1131.659
+LDTE;01/04/2022;Monthly;Consumption;-2008.947
+MACH;01/04/2022;Monthly;Consumption;-578.969
+TRAY;01/04/2022;Monthly;Consumption;12694.383
+LBDF;01/05/2022;Monthly;Consumption;-9948.325
+LDTE;01/05/2022;Monthly;Consumption;-3977.076
+MACH;01/05/2022;Monthly;Consumption;-910.8
+TRAY;01/05/2022;Monthly;Consumption;-1867.933
+LBDF;01/06/2022;Monthly;Consumption;-7568.172
+LDTE;01/06/2022;Monthly;Consumption;-3128.274
+MACH;01/06/2022;Monthly;Consumption;-835.762
+TRAY;01/06/2022;Monthly;Consumption;-1527.008
+LBDF;01/07/2022;Monthly;Consumption;-10613.117
+LDTE;01/07/2022;Monthly;Consumption;-3405.918
+MACH;01/07/2022;Monthly;Consumption;65.697
+TRAY;01/07/2022;Monthly;Consumption;-226.575
+LBDF;01/08/2022;Monthly;Consumption;-12388.443
+LDTE;01/08/2022;Monthly;Consumption;-2960.407
+MACH;01/08/2022;Monthly;Consumption;738.053
+TRAY;01/08/2022;Monthly;Consumption;-3208.662
+LBDF;01/09/2022;Monthly;Consumption;-9985.378
+LDTE;01/09/2022;Monthly;Consumption;-3123.259
+MACH;01/09/2022;Monthly;Consumption;4019.754
+TRAY;01/09/2022;Monthly;Consumption;10257.715
+LBDF;01/10/2022;Monthly;Consumption;-8735.828
+LDTE;01/10/2022;Monthly;Consumption;-2912.307
+MACH;01/10/2022;Monthly;Consumption;1383.751
+TRAY;01/10/2022;Monthly;Consumption;5412.942
+LBDF;01/11/2022;Monthly;Consumption;-6132.637
+LDTE;01/11/2022;Monthly;Consumption;-1726.991
+MACH;01/11/2022;Monthly;Consumption;-714.438
+TRAY;01/11/2022;Monthly;Consumption;-1024.959
+LBDF;01/12/2022;Monthly;Consumption;11049.406
+LDTE;01/12/2022;Monthly;Consumption;-1297.005
+MACH;01/12/2022;Monthly;Consumption;-493.298
+TRAY;01/12/2022;Monthly;Consumption;3391.018
+LBDF;01/01/2023;Monthly;Consumption;-2377.115
+LDTE;01/01/2023;Monthly;Consumption;0.0
+MACH;01/01/2023;Monthly;Consumption;668.389
+TRAY;01/01/2023;Monthly;Consumption;12594.909
+LBDF;01/02/2023;Monthly;Consumption;-8192.69
+LDTE;01/02/2023;Monthly;Consumption;0.0
+MACH;01/02/2023;Monthly;Consumption;-813.321
+TRAY;01/02/2023;Monthly;Consumption;18244.197
+LBDF;01/03/2023;Monthly;Consumption;8045.123
+LDTE;01/03/2023;Monthly;Consumption;0.0
+MACH;01/03/2023;Monthly;Consumption;22509.44
+TRAY;01/03/2023;Monthly;Consumption;607.523
+LBDF;01/04/2023;Monthly;Consumption;-3426.524
+LDTE;01/04/2023;Monthly;Consumption;0.0
+MACH;01/04/2023;Monthly;Consumption;-778.712
+TRAY;01/04/2023;Monthly;Consumption;-1448.891
+LBDF;01/05/2023;Monthly;Consumption;1893.804
+LDTE;01/05/2023;Monthly;Consumption;0.0
+MACH;01/05/2023;Monthly;Consumption;731.338
+TRAY;01/05/2023;Monthly;Consumption;1765.661
+LBDF;01/06/2023;Monthly;Consumption;-5907.277
+LDTE;01/06/2023;Monthly;Consumption;0.0
+MACH;01/06/2023;Monthly;Consumption;118.357
+TRAY;01/06/2023;Monthly;Consumption;-2703.366
+LBDF;01/07/2023;Monthly;Consumption;-9778.889
+LDTE;01/07/2023;Monthly;Consumption;0.0
+MACH;01/07/2023;Monthly;Consumption;-1781.377
+TRAY;01/07/2023;Monthly;Consumption;-1305.892
+LBDF;01/01/2022;Monthly;Gross Generation;1009509.813
+LDTE;01/01/2022;Monthly;Gross Generation;871954.58
+MACH;01/01/2022;Monthly;Gross Generation;1231990.935
+TRAY;01/01/2022;Monthly;Gross Generation;1063981.198
+LBDF;01/02/2022;Monthly;Gross Generation;1934797.104
+LDTE;01/02/2022;Monthly;Gross Generation;1510457.007
+MACH;01/02/2022;Monthly;Gross Generation;1662471.242
+TRAY;01/02/2022;Monthly;Gross Generation;1613750.845
+LBDF;01/03/2022;Monthly;Gross Generation;1563606.988
+LDTE;01/03/2022;Monthly;Gross Generation;1446306.969
+MACH;01/03/2022;Monthly;Gross Generation;1675686.363
+TRAY;01/03/2022;Monthly;Gross Generation;1490695.802
+LBDF;01/04/2022;Monthly;Gross Generation;1391241.088
+LDTE;01/04/2022;Monthly;Gross Generation;1548251.495
+MACH;01/04/2022;Monthly;Gross Generation;1048864.317
+TRAY;01/04/2022;Monthly;Gross Generation;1283578.03
+LBDF;01/05/2022;Monthly;Gross Generation;761614.351
+LDTE;01/05/2022;Monthly;Gross Generation;1026237.672
+MACH;01/05/2022;Monthly;Gross Generation;651524.506
+TRAY;01/05/2022;Monthly;Gross Generation;634330.544
+LBDF;01/06/2022;Monthly;Gross Generation;1014131.518
+LDTE;01/06/2022;Monthly;Gross Generation;1280756.116
+MACH;01/06/2022;Monthly;Gross Generation;583995.893
+TRAY;01/06/2022;Monthly;Gross Generation;493045.959
+LBDF;01/07/2022;Monthly;Gross Generation;735701.193
+LDTE;01/07/2022;Monthly;Gross Generation;1047589.063
+MACH;01/07/2022;Monthly;Gross Generation;779802.933
+TRAY;01/07/2022;Monthly;Gross Generation;731738.859
+LBDF;01/08/2022;Monthly;Gross Generation;978581.488
+LDTE;01/08/2022;Monthly;Gross Generation;1404969.242
+MACH;01/08/2022;Monthly;Gross Generation;750253.385
+TRAY;01/08/2022;Monthly;Gross Generation;714664.632
+LBDF;01/09/2022;Monthly;Gross Generation;999794.763
+LDTE;01/09/2022;Monthly;Gross Generation;1110542.702
+MACH;01/09/2022;Monthly;Gross Generation;891118.006
+TRAY;01/09/2022;Monthly;Gross Generation;784102.609
+LBDF;01/10/2022;Monthly;Gross Generation;1235107.976
+LDTE;01/10/2022;Monthly;Gross Generation;1482688.845
+MACH;01/10/2022;Monthly;Gross Generation;1107509.166
+TRAY;01/10/2022;Monthly;Gross Generation;941568.391
+LBDF;01/11/2022;Monthly;Gross Generation;1994794.915
+LDTE;01/11/2022;Monthly;Gross Generation;1612959.694
+MACH;01/11/2022;Monthly;Gross Generation;1600868.769
+TRAY;01/11/2022;Monthly;Gross Generation;963574.435
+LBDF;01/12/2022;Monthly;Gross Generation;1833046.892
+LDTE;01/12/2022;Monthly;Gross Generation;244934.068
+MACH;01/12/2022;Monthly;Gross Generation;1972933.208
+TRAY;01/12/2022;Monthly;Gross Generation;2092609.981
+LBDF;01/01/2023;Monthly;Gross Generation;2109393.515
+LDTE;01/01/2023;Monthly;Gross Generation;0.0
+MACH;01/01/2023;Monthly;Gross Generation;1923263.492
+TRAY;01/01/2023;Monthly;Gross Generation;1713190.561
+LBDF;01/02/2023;Monthly;Gross Generation;955287.445
+LDTE;01/02/2023;Monthly;Gross Generation;0.0
+MACH;01/02/2023;Monthly;Gross Generation;1191194.036
+TRAY;01/02/2023;Monthly;Gross Generation;1016546.787
+LBDF;01/03/2023;Monthly;Gross Generation;2719675.323
+LDTE;01/03/2023;Monthly;Gross Generation;0.0
+MACH;01/03/2023;Monthly;Gross Generation;2221064.419
+TRAY;01/03/2023;Monthly;Gross Generation;2320293.5
+LBDF;01/04/2023;Monthly;Gross Generation;1335388.893
+LDTE;01/04/2023;Monthly;Gross Generation;0.0
+MACH;01/04/2023;Monthly;Gross Generation;1177789.003
+TRAY;01/04/2023;Monthly;Gross Generation;1339023.867
+LBDF;01/05/2023;Monthly;Gross Generation;1928512.964
+LDTE;01/05/2023;Monthly;Gross Generation;0.0
+MACH;01/05/2023;Monthly;Gross Generation;1239694.42
+TRAY;01/05/2023;Monthly;Gross Generation;1411671.116
+LBDF;01/06/2023;Monthly;Gross Generation;846287.623
+LDTE;01/06/2023;Monthly;Gross Generation;0.0
+MACH;01/06/2023;Monthly;Gross Generation;506606.005
+TRAY;01/06/2023;Monthly;Gross Generation;496002.032
+LBDF;01/07/2023;Monthly;Gross Generation;1184029.006
+LDTE;01/07/2023;Monthly;Gross Generation;0.0
+MACH;01/07/2023;Monthly;Gross Generation;907111.358
+TRAY;01/07/2023;Monthly;Gross Generation;769594.393
+LBDF;01/01/2022;Monthly;OEM Availability;98.40731
+LDTE;01/01/2022;Monthly;OEM Availability;96.865
+MACH;01/01/2022;Monthly;OEM Availability;96.49221
+TRAY;01/01/2022;Monthly;OEM Availability;84.87721
+PLAN;01/01/2022;Monthly;OEM Availability;99.988
+LBDF;01/02/2022;Monthly;OEM Availability;99.97468
+LDTE;01/02/2022;Monthly;OEM Availability;97.2482
+MACH;01/02/2022;Monthly;OEM Availability;96.79554
+TRAY;01/02/2022;Monthly;OEM Availability;94.86788
+PLAN;01/02/2022;Monthly;OEM Availability;99.203
+LBDF;01/03/2022;Monthly;OEM Availability;99.9812
+LDTE;01/03/2022;Monthly;OEM Availability;98.43591
+MACH;01/03/2022;Monthly;OEM Availability;99.22501
+TRAY;01/03/2022;Monthly;OEM Availability;98.45467
+PLAN;01/03/2022;Monthly;OEM Availability;99.804
+LBDF;01/04/2022;Monthly;OEM Availability;90.60412
+LDTE;01/04/2022;Monthly;OEM Availability;93.31884
+MACH;01/04/2022;Monthly;OEM Availability;92.27274
+TRAY;01/04/2022;Monthly;OEM Availability;95.55457
+PLAN;01/04/2022;Monthly;OEM Availability;98.361
+LBDF;01/05/2022;Monthly;OEM Availability;96.60465
+LDTE;01/05/2022;Monthly;OEM Availability;98.97752
+MACH;01/05/2022;Monthly;OEM Availability;92.52752
+TRAY;01/05/2022;Monthly;OEM Availability;94.5597
+PLAN;01/05/2022;Monthly;OEM Availability;99.494
+LBDF;01/06/2022;Monthly;OEM Availability;97.79161
+LDTE;01/06/2022;Monthly;OEM Availability;97.94053
+MACH;01/06/2022;Monthly;OEM Availability;82.07254
+TRAY;01/06/2022;Monthly;OEM Availability;68.71583
+PLAN;01/06/2022;Monthly;OEM Availability;99.361
+LBDF;01/07/2022;Monthly;OEM Availability;98.15743
+LDTE;01/07/2022;Monthly;OEM Availability;99.2673
+MACH;01/07/2022;Monthly;OEM Availability;92.4739
+TRAY;01/07/2022;Monthly;OEM Availability;85.1782
+PLAN;01/07/2022;Monthly;OEM Availability;99.605
+LBDF;01/08/2022;Monthly;OEM Availability;95.71809
+LDTE;01/08/2022;Monthly;OEM Availability;98.88849
+MACH;01/08/2022;Monthly;OEM Availability;94.01772
+TRAY;01/08/2022;Monthly;OEM Availability;92.83449
+PLAN;01/08/2022;Monthly;OEM Availability;98.858
+LBDF;01/09/2022;Monthly;OEM Availability;99.40501
+LDTE;01/09/2022;Monthly;OEM Availability;97.47106
+MACH;01/09/2022;Monthly;OEM Availability;95.49245
+TRAY;01/09/2022;Monthly;OEM Availability;87.74994
+PLAN;01/09/2022;Monthly;OEM Availability;99.796
+LBDF;01/10/2022;Monthly;OEM Availability;98.26922
+LDTE;01/10/2022;Monthly;OEM Availability;99.30454
+MACH;01/10/2022;Monthly;OEM Availability;86.93517
+TRAY;01/10/2022;Monthly;OEM Availability;79.63941
+PLAN;01/10/2022;Monthly;OEM Availability;99.127
+LBDF;01/11/2022;Monthly;OEM Availability;97.33042
+LDTE;01/11/2022;Monthly;OEM Availability;96.38032
+MACH;01/11/2022;Monthly;OEM Availability;91.41822
+TRAY;01/11/2022;Monthly;OEM Availability;99.61419
+PLAN;01/11/2022;Monthly;OEM Availability;99.278
+LBDF;01/12/2022;Monthly;OEM Availability;98.40865
+LDTE;01/12/2022;Monthly;OEM Availability;99.93239
+MACH;01/12/2022;Monthly;OEM Availability;97.834
+TRAY;01/12/2022;Monthly;OEM Availability;94.8245
+PLAN;01/12/2022;Monthly;OEM Availability;99.839
+LBDF;01/01/2023;Monthly;OEM Availability;98.91639
+LDTE;01/01/2023;Monthly;OEM Availability;100.0
+MACH;01/01/2023;Monthly;OEM Availability;96.0759
+TRAY;01/01/2023;Monthly;OEM Availability;98.9089
+PLAN;01/01/2023;Monthly;OEM Availability;99.61
+LBDF;01/02/2023;Monthly;OEM Availability;99.61635
+LDTE;01/02/2023;Monthly;OEM Availability;100.0
+MACH;01/02/2023;Monthly;OEM Availability;98.74617
+TRAY;01/02/2023;Monthly;OEM Availability;87.66463
+PLAN;01/02/2023;Monthly;OEM Availability;99.903
+LBDF;01/03/2023;Monthly;OEM Availability;99.05827
+LDTE;01/03/2023;Monthly;OEM Availability;100.0
+MACH;01/03/2023;Monthly;OEM Availability;92.92527
+TRAY;01/03/2023;Monthly;OEM Availability;97.1306
+PLAN;01/03/2023;Monthly;OEM Availability;100.0
+LBDF;01/04/2023;Monthly;OEM Availability;97.96718
+LDTE;01/04/2023;Monthly;OEM Availability;100.0
+MACH;01/04/2023;Monthly;OEM Availability;94.38633
+TRAY;01/04/2023;Monthly;OEM Availability;94.42706
+PLAN;01/04/2023;Monthly;OEM Availability;99.964
+LBDF;01/05/2023;Monthly;OEM Availability;97.21153
+LDTE;01/05/2023;Monthly;OEM Availability;100.0
+MACH;01/05/2023;Monthly;OEM Availability;97.20899
+TRAY;01/05/2023;Monthly;OEM Availability;98.37793
+PLAN;01/05/2023;Monthly;OEM Availability;99.979
+LBDF;01/06/2023;Monthly;OEM Availability;97.95617
+LDTE;01/06/2023;Monthly;OEM Availability;100.0
+MACH;01/06/2023;Monthly;OEM Availability;98.23806
+TRAY;01/06/2023;Monthly;OEM Availability;93.8541
+PLAN;01/06/2023;Monthly;OEM Availability;99.934
+LBDF;01/07/2023;Monthly;OEM Availability;96.26227
+LDTE;01/07/2023;Monthly;OEM Availability;100.0
+MACH;01/07/2023;Monthly;OEM Availability;95.42579
+TRAY;01/07/2023;Monthly;OEM Availability;72.6668
+LBDF;01/01/2022;Monthly;Operational Hours;15596601.56
+LDTE;01/01/2022;Monthly;Operational Hours;11950015.654
+MACH;01/01/2022;Monthly;Operational Hours;10281781.85
+TRAY;01/01/2022;Monthly;Operational Hours;10930438.59
+LBDF;01/02/2022;Monthly;Operational Hours;14195922.42
+LDTE;01/02/2022;Monthly;Operational Hours;9907595.868
+MACH;01/02/2022;Monthly;Operational Hours;9428932.88
+TRAY;01/02/2022;Monthly;Operational Hours;10938123.26
+LBDF;01/03/2022;Monthly;Operational Hours;15513790.27
+LDTE;01/03/2022;Monthly;Operational Hours;11125129.766
+MACH;01/03/2022;Monthly;Operational Hours;10618985.9
+TRAY;01/03/2022;Monthly;Operational Hours;12301865.17
+LBDF;01/04/2022;Monthly;Operational Hours;13994210.19
+LDTE;01/04/2022;Monthly;Operational Hours;10173079.696
+MACH;01/04/2022;Monthly;Operational Hours;8133630.16
+TRAY;01/04/2022;Monthly;Operational Hours;11387568.51
+LBDF;01/05/2022;Monthly;Operational Hours;15348332.32
+LDTE;01/05/2022;Monthly;Operational Hours;11439115.347
+MACH;01/05/2022;Monthly;Operational Hours;8486356.87
+TRAY;01/05/2022;Monthly;Operational Hours;11380090.93
+LBDF;01/06/2022;Monthly;Operational Hours;14748574.59
+LDTE;01/06/2022;Monthly;Operational Hours;10704359.521
+MACH;01/06/2022;Monthly;Operational Hours;7001887.42
+TRAY;01/06/2022;Monthly;Operational Hours;8564019.63
+LBDF;01/07/2022;Monthly;Operational Hours;14067835.23
+LDTE;01/07/2022;Monthly;Operational Hours;11268733.191
+MACH;01/07/2022;Monthly;Operational Hours;8174887.05
+TRAY;01/07/2022;Monthly;Operational Hours;10290273.77
+LBDF;01/08/2022;Monthly;Operational Hours;12901506.47
+LDTE;01/08/2022;Monthly;Operational Hours;11534850.745
+MACH;01/08/2022;Monthly;Operational Hours;7708083.0
+TRAY;01/08/2022;Monthly;Operational Hours;10883454.25
+LBDF;01/09/2022;Monthly;Operational Hours;15295113.69
+LDTE;01/09/2022;Monthly;Operational Hours;10837104.061
+MACH;01/09/2022;Monthly;Operational Hours;7543548.01
+TRAY;01/09/2022;Monthly;Operational Hours;10032760.0
+LBDF;01/10/2022;Monthly;Operational Hours;15032643.56
+LDTE;01/10/2022;Monthly;Operational Hours;11021930.672
+MACH;01/10/2022;Monthly;Operational Hours;7279778.45
+TRAY;01/10/2022;Monthly;Operational Hours;9890262.41
+LBDF;01/11/2022;Monthly;Operational Hours;13839380.51
+LDTE;01/11/2022;Monthly;Operational Hours;10220491.133
+MACH;01/11/2022;Monthly;Operational Hours;9085587.24
+TRAY;01/11/2022;Monthly;Operational Hours;12182590.62
+LBDF;01/12/2022;Monthly;Operational Hours;13011836.7
+LDTE;01/12/2022;Monthly;Operational Hours;11136956.712
+MACH;01/12/2022;Monthly;Operational Hours;9497579.92
+TRAY;01/12/2022;Monthly;Operational Hours;10965143.59
+LBDF;01/01/2023;Monthly;Operational Hours;12883119.93
+LDTE;01/01/2023;Monthly;Operational Hours;10713600.0
+MACH;01/01/2023;Monthly;Operational Hours;10083098.06
+TRAY;01/01/2023;Monthly;Operational Hours;9431222.48
+LBDF;01/02/2023;Monthly;Operational Hours;11673074.52
+LDTE;01/02/2023;Monthly;Operational Hours;8640000.0
+MACH;01/02/2023;Monthly;Operational Hours;9216759.88
+TRAY;01/02/2023;Monthly;Operational Hours;9483762.13
+LBDF;01/03/2023;Monthly;Operational Hours;13322995.74
+LDTE;01/03/2023;Monthly;Operational Hours;0.0
+MACH;01/03/2023;Monthly;Operational Hours;9910351.2
+TRAY;01/03/2023;Monthly;Operational Hours;12065180.89
+LBDF;01/04/2023;Monthly;Operational Hours;15184725.59
+LDTE;01/04/2023;Monthly;Operational Hours;0.0
+MACH;01/04/2023;Monthly;Operational Hours;8314477.15
+TRAY;01/04/2023;Monthly;Operational Hours;11520200.3
+LBDF;01/05/2023;Monthly;Operational Hours;15065181.21
+LDTE;01/05/2023;Monthly;Operational Hours;0.0
+MACH;01/05/2023;Monthly;Operational Hours;8310754.49
+TRAY;01/05/2023;Monthly;Operational Hours;11685131.79
+LBDF;01/06/2023;Monthly;Operational Hours;13976949.27
+LDTE;01/06/2023;Monthly;Operational Hours;0.0
+MACH;01/06/2023;Monthly;Operational Hours;8416624.86
+TRAY;01/06/2023;Monthly;Operational Hours;11084708.78
+LBDF;01/07/2023;Monthly;Operational Hours;14397138.6
+LDTE;01/07/2023;Monthly;Operational Hours;0.0
+MACH;01/07/2023;Monthly;Operational Hours;8114893.99
+TRAY;01/07/2023;Monthly;Operational Hours;7892774.02
+LBDF;01/01/2022;Monthly;Production;1009509.813
+LDTE;01/01/2022;Monthly;Production;871954.58
+MACH;01/01/2022;Monthly;Production;1231990.935
+TRAY;01/01/2022;Monthly;Production;1063981.198
+LBDF;01/02/2022;Monthly;Production;1934797.104
+LDTE;01/02/2022;Monthly;Production;1510457.007
+MACH;01/02/2022;Monthly;Production;1662471.242
+TRAY;01/02/2022;Monthly;Production;1613750.845
+LBDF;01/03/2022;Monthly;Production;1563606.988
+LDTE;01/03/2022;Monthly;Production;1446306.969
+MACH;01/03/2022;Monthly;Production;1675686.363
+TRAY;01/03/2022;Monthly;Production;1490695.802
+LBDF;01/04/2022;Monthly;Production;1391241.088
+LDTE;01/04/2022;Monthly;Production;1548251.495
+MACH;01/04/2022;Monthly;Production;1048864.317
+TRAY;01/04/2022;Monthly;Production;1283578.03
+LBDF;01/05/2022;Monthly;Production;761614.351
+LDTE;01/05/2022;Monthly;Production;1026237.672
+MACH;01/05/2022;Monthly;Production;651524.506
+TRAY;01/05/2022;Monthly;Production;634330.544
+LBDF;01/06/2022;Monthly;Production;1014131.518
+LDTE;01/06/2022;Monthly;Production;1280756.116
+MACH;01/06/2022;Monthly;Production;583995.893
+TRAY;01/06/2022;Monthly;Production;493045.959
+LBDF;01/07/2022;Monthly;Production;735701.193
+LDTE;01/07/2022;Monthly;Production;1047589.063
+MACH;01/07/2022;Monthly;Production;779802.933
+TRAY;01/07/2022;Monthly;Production;731738.859
+LBDF;01/08/2022;Monthly;Production;978581.488
+LDTE;01/08/2022;Monthly;Production;1404969.242
+MACH;01/08/2022;Monthly;Production;750253.385
+TRAY;01/08/2022;Monthly;Production;714664.632
+LBDF;01/09/2022;Monthly;Production;999794.763
+LDTE;01/09/2022;Monthly;Production;1110542.702
+MACH;01/09/2022;Monthly;Production;891118.006
+TRAY;01/09/2022;Monthly;Production;784102.609
+LBDF;01/10/2022;Monthly;Production;1235107.976
+LDTE;01/10/2022;Monthly;Production;1482688.845
+MACH;01/10/2022;Monthly;Production;1107509.166
+TRAY;01/10/2022;Monthly;Production;941568.391
+LBDF;01/11/2022;Monthly;Production;1994794.915
+LDTE;01/11/2022;Monthly;Production;1612959.694
+MACH;01/11/2022;Monthly;Production;1600868.769
+TRAY;01/11/2022;Monthly;Production;963574.435
+LBDF;01/12/2022;Monthly;Production;1833046.892
+LDTE;01/12/2022;Monthly;Production;244934.068
+MACH;01/12/2022;Monthly;Production;1972933.208
+TRAY;01/12/2022;Monthly;Production;2092609.981
+LBDF;01/01/2023;Monthly;Production;2109393.515
+LDTE;01/01/2023;Monthly;Production;0.0
+MACH;01/01/2023;Monthly;Production;1923263.492
+TRAY;01/01/2023;Monthly;Production;1713190.561
+LBDF;01/02/2023;Monthly;Production;955287.445
+LDTE;01/02/2023;Monthly;Production;0.0
+MACH;01/02/2023;Monthly;Production;1191194.036
+TRAY;01/02/2023;Monthly;Production;1016546.787
+LBDF;01/03/2023;Monthly;Production;2719675.323
+LDTE;01/03/2023;Monthly;Production;0.0
+MACH;01/03/2023;Monthly;Production;2221064.419
+TRAY;01/03/2023;Monthly;Production;2320293.5
+LBDF;01/04/2023;Monthly;Production;1335388.893
+LDTE;01/04/2023;Monthly;Production;0.0
+MACH;01/04/2023;Monthly;Production;1177789.003
+TRAY;01/04/2023;Monthly;Production;1339023.867
+LBDF;01/05/2023;Monthly;Production;1928512.964
+LDTE;01/05/2023;Monthly;Production;0.0
+MACH;01/05/2023;Monthly;Production;1239694.42
+TRAY;01/05/2023;Monthly;Production;1411671.116
+LBDF;01/06/2023;Monthly;Production;846287.623
+LDTE;01/06/2023;Monthly;Production;0.0
+MACH;01/06/2023;Monthly;Production;506606.005
+TRAY;01/06/2023;Monthly;Production;496002.032
+LBDF;01/07/2023;Monthly;Production;1184029.006
+LDTE;01/07/2023;Monthly;Production;0.0
+MACH;01/07/2023;Monthly;Production;907111.358
+TRAY;01/07/2023;Monthly;Production;769594.393
+LBDF;01/01/2022;Monthly;Wind Speed;4.829
+LDTE;01/01/2022;Monthly;Wind Speed;4.7134
+MACH;01/01/2022;Monthly;Wind Speed;5.28875
+TRAY;01/01/2022;Monthly;Wind Speed;5.0166
+PLAN;01/01/2022;Monthly;Wind Speed;5.99046
+LBDF;01/02/2022;Monthly;Wind Speed;6.295
+LDTE;01/02/2022;Monthly;Wind Speed;6.2778
+MACH;01/02/2022;Monthly;Wind Speed;6.213
+TRAY;01/02/2022;Monthly;Wind Speed;5.9276
+PLAN;01/02/2022;Monthly;Wind Speed;9.20307
+LBDF;01/03/2022;Monthly;Wind Speed;5.92917
+LDTE;01/03/2022;Monthly;Wind Speed;5.954
+MACH;01/03/2022;Monthly;Wind Speed;6.362
+TRAY;01/03/2022;Monthly;Wind Speed;5.7804
+PLAN;01/03/2022;Monthly;Wind Speed;6.73218
+LBDF;01/04/2022;Monthly;Wind Speed;5.81383
+LDTE;01/04/2022;Monthly;Wind Speed;5.9564
+MACH;01/04/2022;Monthly;Wind Speed;6.0985
+TRAY;01/04/2022;Monthly;Wind Speed;5.519
+PLAN;01/04/2022;Monthly;Wind Speed;7.24638
+LBDF;01/05/2022;Monthly;Wind Speed;4.60517
+LDTE;01/05/2022;Monthly;Wind Speed;4.9794
+MACH;01/05/2022;Monthly;Wind Speed;5.164
+TRAY;01/05/2022;Monthly;Wind Speed;4.548
+PLAN;01/05/2022;Monthly;Wind Speed;5.43042
+LBDF;01/06/2022;Monthly;Wind Speed;5.24583
+LDTE;01/06/2022;Monthly;Wind Speed;5.6034
+MACH;01/06/2022;Monthly;Wind Speed;5.3035
+TRAY;01/06/2022;Monthly;Wind Speed;4.816
+PLAN;01/06/2022;Monthly;Wind Speed;5.15922
+LBDF;01/07/2022;Monthly;Wind Speed;4.95817
+LDTE;01/07/2022;Monthly;Wind Speed;5.2414
+MACH;01/07/2022;Monthly;Wind Speed;5.47625
+TRAY;01/07/2022;Monthly;Wind Speed;5.0108
+PLAN;01/07/2022;Monthly;Wind Speed;5.11306
+LBDF;01/08/2022;Monthly;Wind Speed;5.31067
+LDTE;01/08/2022;Monthly;Wind Speed;5.4772
+MACH;01/08/2022;Monthly;Wind Speed;5.36125
+TRAY;01/08/2022;Monthly;Wind Speed;4.9302
+PLAN;01/08/2022;Monthly;Wind Speed;5.38608
+LBDF;01/09/2022;Monthly;Wind Speed;5.09517
+LDTE;01/09/2022;Monthly;Wind Speed;5.2094
+MACH;01/09/2022;Monthly;Wind Speed;5.5725
+TRAY;01/09/2022;Monthly;Wind Speed;4.922
+PLAN;01/09/2022;Monthly;Wind Speed;5.60784
+LBDF;01/10/2022;Monthly;Wind Speed;5.51317
+LDTE;01/10/2022;Monthly;Wind Speed;5.8446
+MACH;01/10/2022;Monthly;Wind Speed;5.9345
+TRAY;01/10/2022;Monthly;Wind Speed;4.5472
+PLAN;01/10/2022;Monthly;Wind Speed;7.0
+LBDF;01/11/2022;Monthly;Wind Speed;6.94283
+LDTE;01/11/2022;Monthly;Wind Speed;6.8908
+MACH;01/11/2022;Monthly;Wind Speed;6.79175
+TRAY;01/11/2022;Monthly;Wind Speed;4.3458
+PLAN;01/11/2022;Monthly;Wind Speed;8.0
+LBDF;01/12/2022;Monthly;Wind Speed;6.40217
+LDTE;01/12/2022;Monthly;Wind Speed;4.5768
+MACH;01/12/2022;Monthly;Wind Speed;7.338
+TRAY;01/12/2022;Monthly;Wind Speed;6.8132
+PLAN;01/12/2022;Monthly;Wind Speed;7.2286
+LBDF;01/01/2023;Monthly;Wind Speed;6.9646
+LDTE;01/01/2023;Monthly;Wind Speed;0.0
+MACH;01/01/2023;Monthly;Wind Speed;6.84175
+TRAY;01/01/2023;Monthly;Wind Speed;6.7022
+PLAN;01/01/2023;Monthly;Wind Speed;8.0983
+LBDF;01/02/2023;Monthly;Wind Speed;5.4445
+LDTE;01/02/2023;Monthly;Wind Speed;0.0
+MACH;01/02/2023;Monthly;Wind Speed;5.57425
+TRAY;01/02/2023;Monthly;Wind Speed;5.4312
+PLAN;01/02/2023;Monthly;Wind Speed;6.57166
+LBDF;01/03/2023;Monthly;Wind Speed;7.79
+LDTE;01/03/2023;Monthly;Wind Speed;0.0
+MACH;01/03/2023;Monthly;Wind Speed;7.47925
+TRAY;01/03/2023;Monthly;Wind Speed;6.9266
+PLAN;01/03/2023;Monthly;Wind Speed;8.2
+LBDF;01/04/2023;Monthly;Wind Speed;5.60617
+LDTE;01/04/2023;Monthly;Wind Speed;0.0
+MACH;01/04/2023;Monthly;Wind Speed;6.04775
+TRAY;01/04/2023;Monthly;Wind Speed;5.6132
+PLAN;01/04/2023;Monthly;Wind Speed;6.71273
+LBDF;01/05/2023;Monthly;Wind Speed;6.483
+LDTE;01/05/2023;Monthly;Wind Speed;0.0
+MACH;01/05/2023;Monthly;Wind Speed;6.4305
+TRAY;01/05/2023;Monthly;Wind Speed;5.8766
+PLAN;01/05/2023;Monthly;Wind Speed;6.52105
+LBDF;01/06/2023;Monthly;Wind Speed;4.739
+LDTE;01/06/2023;Monthly;Wind Speed;0.0
+MACH;01/06/2023;Monthly;Wind Speed;4.87075
+TRAY;01/06/2023;Monthly;Wind Speed;4.3626
+PLAN;01/06/2023;Monthly;Wind Speed;5.63
+LBDF;01/07/2023;Monthly;Wind Speed;5.61233
+LDTE;01/07/2023;Monthly;Wind Speed;0.0
+MACH;01/07/2023;Monthly;Wind Speed;5.6365
+TRAY;01/07/2023;Monthly;Wind Speed;5.1466
+LBDF;01/01/2022;Monthly;Wind Theoretical Production;1059688.998
+LDTE;01/01/2022;Monthly;Wind Theoretical Production;1091654.611
+MACH;01/01/2022;Monthly;Wind Theoretical Production;1231434.1
+TRAY;01/01/2022;Monthly;Wind Theoretical Production;1455198.588
+LBDF;01/02/2022;Monthly;Wind Theoretical Production;1936244.735
+LDTE;01/02/2022;Monthly;Wind Theoretical Production;2059207.446
+MACH;01/02/2022;Monthly;Wind Theoretical Production;1731668.611
+TRAY;01/02/2022;Monthly;Wind Theoretical Production;1902237.832
+LBDF;01/03/2022;Monthly;Wind Theoretical Production;1612867.042
+LDTE;01/03/2022;Monthly;Wind Theoretical Production;1814032.683
+MACH;01/03/2022;Monthly;Wind Theoretical Production;1667027.988
+TRAY;01/03/2022;Monthly;Wind Theoretical Production;1696808.607
+LBDF;01/04/2022;Monthly;Wind Theoretical Production;1521166.59
+LDTE;01/04/2022;Monthly;Wind Theoretical Production;1721245.631
+MACH;01/04/2022;Monthly;Wind Theoretical Production;1361063.501
+TRAY;01/04/2022;Monthly;Wind Theoretical Production;1505301.996
+LBDF;01/05/2022;Monthly;Wind Theoretical Production;813244.223
+LDTE;01/05/2022;Monthly;Wind Theoretical Production;1116177.926
+MACH;01/05/2022;Monthly;Wind Theoretical Production;930045.842
+TRAY;01/05/2022;Monthly;Wind Theoretical Production;828511.949
+LBDF;01/06/2022;Monthly;Wind Theoretical Production;1091039.965
+LDTE;01/06/2022;Monthly;Wind Theoretical Production;1421291.88
+MACH;01/06/2022;Monthly;Wind Theoretical Production;965517.991
+TRAY;01/06/2022;Monthly;Wind Theoretical Production;920275.052
+LBDF;01/07/2022;Monthly;Wind Theoretical Production;894005.826
+LDTE;01/07/2022;Monthly;Wind Theoretical Production;1175350.869
+MACH;01/07/2022;Monthly;Wind Theoretical Production;1138051.247
+TRAY;01/07/2022;Monthly;Wind Theoretical Production;1155565.219
+LBDF;01/08/2022;Monthly;Wind Theoretical Production;1284421.415
+LDTE;01/08/2022;Monthly;Wind Theoretical Production;1470880.79
+MACH;01/08/2022;Monthly;Wind Theoretical Production;1096634.381
+TRAY;01/08/2022;Monthly;Wind Theoretical Production;1117667.722
+LBDF;01/09/2022;Monthly;Wind Theoretical Production;1042976.935
+LDTE;01/09/2022;Monthly;Wind Theoretical Production;1216360.434
+MACH;01/09/2022;Monthly;Wind Theoretical Production;1162474.518
+TRAY;01/09/2022;Monthly;Wind Theoretical Production;1053752.444
+LBDF;01/10/2022;Monthly;Wind Theoretical Production;1360462.856
+LDTE;01/10/2022;Monthly;Wind Theoretical Production;1622327.563
+MACH;01/10/2022;Monthly;Wind Theoretical Production;1473357.95
+TRAY;01/10/2022;Monthly;Wind Theoretical Production;1285412.11
+LBDF;01/11/2022;Monthly;Wind Theoretical Production;2386451.349
+LDTE;01/11/2022;Monthly;Wind Theoretical Production;2729447.015
+MACH;01/11/2022;Monthly;Wind Theoretical Production;1921530.44
+TRAY;01/11/2022;Monthly;Wind Theoretical Production;1429842.591
+LBDF;01/12/2022;Monthly;Wind Theoretical Production;2305056.806
+LDTE;01/12/2022;Monthly;Wind Theoretical Production;3105482.045
+MACH;01/12/2022;Monthly;Wind Theoretical Production;2432722.438
+TRAY;01/12/2022;Monthly;Wind Theoretical Production;2682759.945
+LBDF;01/01/2023;Monthly;Wind Theoretical Production;2581503.667
+LDTE;01/01/2023;Monthly;Wind Theoretical Production;3737916.765
+MACH;01/01/2023;Monthly;Wind Theoretical Production;2096048.55
+TRAY;01/01/2023;Monthly;Wind Theoretical Production;2453299.466
+LBDF;01/02/2023;Monthly;Wind Theoretical Production;1214209.856
+LDTE;01/02/2023;Monthly;Wind Theoretical Production;883471.449
+MACH;01/02/2023;Monthly;Wind Theoretical Production;1225267.042
+TRAY;01/02/2023;Monthly;Wind Theoretical Production;1392247.568
+LBDF;01/03/2023;Monthly;Wind Theoretical Production;3191217.341
+LDTE;01/03/2023;Monthly;Wind Theoretical Production;709558.095
+MACH;01/03/2023;Monthly;Wind Theoretical Production;2494978.945
+TRAY;01/03/2023;Monthly;Wind Theoretical Production;2596064.131
+LBDF;01/04/2023;Monthly;Wind Theoretical Production;1380147.336
+LDTE;01/04/2023;Monthly;Wind Theoretical Production;2016164.145
+MACH;01/04/2023;Monthly;Wind Theoretical Production;1489545.926
+TRAY;01/04/2023;Monthly;Wind Theoretical Production;1536577.435
+LBDF;01/05/2023;Monthly;Wind Theoretical Production;2028812.595
+LDTE;01/05/2023;Monthly;Wind Theoretical Production;1152891.03
+MACH;01/05/2023;Monthly;Wind Theoretical Production;1669682.075
+TRAY;01/05/2023;Monthly;Wind Theoretical Production;1668841.287
+LBDF;01/06/2023;Monthly;Wind Theoretical Production;915792.855
+LDTE;01/06/2023;Monthly;Wind Theoretical Production;681409.125
+MACH;01/06/2023;Monthly;Wind Theoretical Production;735399.968
+TRAY;01/06/2023;Monthly;Wind Theoretical Production;672754.986
+LBDF;01/07/2023;Monthly;Wind Theoretical Production;1357732.745
+LDTE;01/07/2023;Monthly;Wind Theoretical Production;0.0
+MACH;01/07/2023;Monthly;Wind Theoretical Production;1198962.903
+TRAY;01/07/2023;Monthly;Wind Theoretical Production;1156719.394
