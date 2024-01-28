@@ -9,8 +9,8 @@ import numpy as np
 from icarus.io.rdl.api import RDLApi, StaticDataView
 from icarus import CORPORATE_PROXIES
 
-start_date = "2023-01-01"
-end_date = "2023-11-30"
+start_date = "2023-11-01"
+end_date = "2023-12-01"
 
 limit_scope_to = None
 
@@ -51,7 +51,7 @@ if platform == "linux":
     objet_type_to_bluepoint_config_file = r"/home/EDF/centralparc/parametrage_objets.xlsx"
 
 rdl_api = RDLApi(
-    # proxies=CORPORATE_PROXIES.FR,
+    proxies=CORPORATE_PROXIES.FR,
     )
 
 project_list = rdl_api.business_metadata(StaticDataView.PROJECT, filters="iso_country_code", value="FR")
@@ -197,10 +197,10 @@ cont_monthly_device = []
 for project in tqdm.tqdm(project_list):
     try:
         cont_monthly_device.append(
-            rdl_api.contractual_monthly_asset(                 
+            rdl_api.contractual_monthly_asset(
+                project["project_code"],     
                 start_date,
                 end_date,
-                project["project_code"],
                 # attributes=[attr["code"] for attr in cont_monthly_attr],
                 attributes=cont_monthly_attr,
                 output_type="json",

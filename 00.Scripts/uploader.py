@@ -202,11 +202,17 @@ class BluepointUploader:
         return s
 
     def initiate_ws_session(self) -> websocket.WebSocket:
+        # Add 
         """
+        This method initiates an HTTP session using the requests library.
+
+        It first creates a new session, then sends a GET request to the specified URL to retrieve the frontend environment data.
+        It also handles proxies and SSL verification based on the instance variables self.proxies and self.verify.
+
         Returns
         -------
-        websocket.WebSocket
-            Websocket session
+        requests.Session
+            The initiated HTTP session with the necessary cookies and headers set.
         """
         ws = websocket.WebSocket()
         

@@ -1,5 +1,6 @@
 # %%
 import os
+import platform
 import re
 import glob
 
@@ -7,36 +8,46 @@ import pandas as pd
 
 limit_scope_to = None
 
-# limit_scope_to = [
-# "CY11",
-# "FIEN",
-# "MA22",
-# "TL11",
+limit_scope_to = [
+# "ANPA",
+# "BVER",
+# "JONC",
+# "ARAM",
+# "EYGU",
+# "SACU", # vente au post
 # "PEZI",
-# "CHPI",
-# "TL12",
-# "TL13",
-# "TL14",
-# "TL15",
-# "MA24",
-# "CY12",
-# "CY13",
-# "BRIA",
-# "COLB",
-# "NITR",
-# "JAVI",
-# "LEMO",
-# "SALL",
-# "COT1",
-# "COT2",
-# "COT3",
-# "COT4",
-# "VARA",
-# ]
+"BTSX",
+"LBDF",
+"LDTE",
+"MACH",
+"PLAN",
+"TRAY",
+"BRIA",
+"NITR,"
+"COLB",
+"CY11",
+"CY12",
+"CY13",
+"MA22",
+"MA24",
+"SUBL",
+"TL11",
+"TL12",
+"TL13",
+"TL14",
+"TL15",
+"VACH",
+]
 
-data_folder_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\01.Snapshot"
-export_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\03.Bluepoint import data"
-objet_type_to_bluepoint_config_file = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\03 - Paramètrage\parametrage_objets.xlsx"
+if platform == "win32":
+    data_folder_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 03 - Réalisation - 03 - Réalisation\02.Migration données\01.Snapshot"
+    export_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 03 - Réalisation - 03 - Réalisation\02.Migration données\03.Import data\01.Brut"
+    objet_type_to_bluepoint_config_file = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 03 - Réalisation - 03 - Réalisation\01.Bluepoint\parametrage_objets.xlsx"
+
+if platform == "linux":
+    data_folder_path = r"/home/EDF/centralparc/01.Snapshot"
+    export_path = r"//home/EDF/centralparc/03.Import data/01.Brut"
+    objet_type_to_bluepoint_config_file = r"/home/EDF/centralparc/parametrage_objets.xlsx"
 
 centrale_df = pd.read_parquet(os.path.join(data_folder_path, "centrale.parquet"))
 

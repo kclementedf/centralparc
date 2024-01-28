@@ -8,44 +8,43 @@ from rapidfuzz import fuzz
 
 limit_scope_to = None
 
-# limit_scope_to = [
+limit_scope_to = [
 # "ANPA",
 # "BVER",
-# "JON2",
 # "JONC",
-# "ROUS",
-# "CY11",
-# "FIEN",
-# "MA22",
-# "TL11",
+# "ARAM",
+# "EYGU",
+# "SACU", # vente au post
 # "PEZI",
-# "CHPI",
-# "TL12",
-# "TL13",
-# "TL14",
-# "TL15",
-# "MA24",
-# "CY12",
-# "CY13",
-# "BRIA",
-# "COLB",
-# "NITR",
-# "JAVI",
-# "LEMO",
-# "SALL",
-# "COT1",
-# "COT2",
-# "COT3",
-# "COT4",
-# "VARA",
-# ]
+"BTSX",
+"LBDF",
+"LDTE",
+"MACH",
+"PLAN",
+"TRAY",
+"BRIA",
+"NITR,"
+"COLB",
+"CY11",
+"CY12",
+"CY13",
+"MA22",
+"MA24",
+"SUBL",
+"TL11",
+"TL12",
+"TL13",
+"TL14",
+"TL15",
+"VACH",
+]
 
 # Set this varaibles differently for windows and linux
 
 if platform == "win32":
-    data_folder_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\01.Snapshot"
-    export_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\centralparc\03.Import data\01.Brut"
-    objet_type_to_bluepoint_config_file = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\03 - Paramètrage\parametrage_objets.xlsx"
+    data_folder_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 03 - Réalisation - 03 - Réalisation\02.Migration données\01.Snapshot"
+    export_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 03 - Réalisation - 03 - Réalisation\02.Migration données\03.Import data\01.Brut"
+    objet_type_to_bluepoint_config_file = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 03 - Réalisation - 03 - Réalisation\01.Bluepoint\parametrage_objets.xlsx"
 
 if platform == "linux":
     data_folder_path = r"/home/EDF/centralparc/01.Snapshot"
@@ -53,6 +52,7 @@ if platform == "linux":
     objet_type_to_bluepoint_config_file = r"/home/EDF/centralparc/parametrage_objets.xlsx"
 
 correpondance_id_df = pd.read_excel(os.path.join(
+    data_folder_path,
     "..",
     r"correspondance_identifiants_plateforme.xlsx"
 ),
@@ -78,6 +78,16 @@ materiel_type_to_bluepoint = (
     .dropna(subset=["Nom Bluepoint - décision équipe"])[["ID_TYPE_ENTITE_ELEMENTS", "Nom Bluepoint - décision équipe"]]
     .set_index("ID_TYPE_ENTITE_ELEMENTS")
     .to_dict()["Nom Bluepoint - décision équipe"]
+)
+
+model_windga_to_bluepoint = (
+    pd.read_excel(
+        objet_type_to_bluepoint_config_file,
+        sheet_name="10 - Modèle windga_bluepoint"
+    )
+    .dropna(subset=["Nom Bluepoint"])[["ID_MATERIEL", "Nom Bluepoint"]]
+    .set_index("ID_MATERIEL")
+    .to_dict()["Nom Bluepoint"]
 )
 
 milestone_type_to_bluepoint = (
@@ -163,7 +173,6 @@ evenement_df = pd.read_parquet(os.path.join(
 liste_evenement_df = pd.read_parquet(os.path.join(
     data_folder_path, "liste_evenements.parquet"))
 
-# productible_reel_mensuel_df = pd.read_parquet(os.path.join(data_folder_path, "productible_reel_mensuel.parquet"))
 productible_reel_mensuel_df = pd.read_excel(os.path.join(
     data_folder_path,
     r"productible_reel_mensuel.xlsx"
@@ -171,13 +180,10 @@ productible_reel_mensuel_df = pd.read_excel(os.path.join(
 productible_reel_mensuel_df["PERIODE_MENSUELLE"] = pd.to_datetime(
     productible_reel_mensuel_df["PERIODE_MENSUELLE"])
 
-# productible_reel_mensuel_detail_df = pd.read_parquet(os.path.join(data_folder_path, "productible_reel_mensuel_detail.parquet"))
 productible_reel_mensuel_detail_df = pd.read_excel(os.path.join(
     data_folder_path, 
     r"productible_reel_mensuel_detail.xlsx"
     ))
-productible_reel_mensuel_detail_df["PERIODE_MENSUELLE"] = pd.to_datetime(productible_reel_mensuel_detail_df["PERIODE_MENSUELLE"])
-
 
 interlocuteur_df = pd.read_parquet(os.path.join(
     data_folder_path, "interlocuteur.parquet"))
@@ -423,19 +429,6 @@ import_plant_df["Status"] = "Operational"
 import_plant_df["Country"] = "France"
 import_plant_df["Location Name"] = import_plant_df["NOM_CENTRALE"].values
 import_plant_df["Utility Company"] = "Enedis"
-# # import_plant_df["Location ID"] = import_plant_df["CODE_PI"].values
-
-# location_df = centrale_df.copy()
-# location_df = location_df.groupby("ID_PROJET").agg({"ID_CENTRALE": "count", "CODE_PI": "first", "NOM_CENTRALE": "first"}).reset_index()
-# location_df.loc[location_df["ID_CENTRALE"] > 1, "CODE_PI"] = location_df.loc[location_df["ID_CENTRALE"] > 1, "CODE_PI"].str[:3] + "X" # cas de centrale avec plusieurs comptage
-# location_df["CODE_PI"] = location_df["CODE_PI"].str[:4] # Enlève la partie METER00X du code pi
-# location_df = location_df.rename(columns={"NOM_CENTRALE": "Location Name", "CODE_PI": "Location ID"})
-# import_plant_df=  import_plant_df.merge(
-#     location_df[["ID_PROJET", "Location Name", "Location ID"]],
-#     left_on=["ID_PROJET"],
-#     right_on=["ID_PROJET"],
-#     how="left"
-# )
 
 centrale_to_bluepoint = {
     "NOM_CENTRALE": "Plant Name",
@@ -460,26 +453,60 @@ centrale_to_bluepoint = {
 
 import_plant_df = import_plant_df.rename(columns=centrale_to_bluepoint)[
     list(centrale_to_bluepoint.values())]
+
 import_plant_df["Resource"] = import_plant_df["Resource"].replace({
     "Eolien": "Wind",
     "PV Sol ": "Solar",
     "Ombrière et parking": "Solar"
 })
+import_plant_df["Voltages"] = ""
+import_plant_df["Overview Notes"] = ""
+import_plant_df["Description Notes"] = ""
+import_plant_df["Tags"] = "A vérifier"
+import_plant_df["Type de revente d'électricité"] = "A vérifier"
+
+# Location related
+import_plant_df["Protected Wildlife"] = ""
+import_plant_df["Risk Notes"] = ""
+import_plant_df["Access Notes"] = ""
+import_plant_df["Biome"] = ""
+import_plant_df["Area Notes"] = ""
+import_plant_df["Area Size"] = ""
+import_plant_df["Enclosure Type"] = ""
+import_plant_df["Position"] = ""
+
 
 import_plant_df = import_plant_df.drop_duplicates(subset=["Plant ID"])
 
 import_plant_df["Capacity DC"] = import_plant_df["Capacity AC"]
-# import_plant_df.loc[import_plant_df["Resource"] == "Solar", "Capacity AC"] = None
-# import_plant_df.loc[import_plant_df["Resource"] == "Wind", "Capacity DC"] = None
-# import_plant_df.to_excel(os.path.join(export_path, "plant.xlsx"), sep=",", index=False)x
 
-# import_plant_df.to_excel(os.path.join(export_path, "plant.xlsx"), sep=",", index=False)
-import_plant_df[import_plant_df["Resource"] == "Wind"].drop(columns=["Capacity DC"]
-                                                            ).to_excel(os.path.join(export_path, "3.plant_wind.xlsx"), index=False)
+import_wind_plant_df = import_plant_df[import_plant_df["Resource"] == "Wind"].drop(columns=["Capacity DC"]
+                                                            ).copy()
+import_wind_plant_df["Wind Type"] = "Onshore"
+import_wind_plant_df["Turbine Height"] = ""
+import_wind_plant_df["Rotor Length"] = ""
+import_wind_plant_df["Modèle de runner"] = ""
 
+import_solar_plant_df = import_plant_df[import_plant_df["Resource"] == "Solar"].drop(columns=["Capacity AC"]
+                                                             ).drop_duplicates()
+import_solar_plant_df["Azimuth Angle"] = ""
+import_solar_plant_df["Multiple Tilt and Azimuth"] = ""
+import_solar_plant_df["Soil"] = ""
+import_solar_plant_df["Shading"] = ""
+import_solar_plant_df["Superficie cloturée du site"] = ""
+import_solar_plant_df["Hauteur Structure"] = ""
+import_solar_plant_df["Ecartement interrangée"] = ""
+import_solar_plant_df["Surface projetée des panneaux"] = ""
+import_solar_plant_df["Câblage apparent"] = ""
 
-import_plant_df[import_plant_df["Resource"] == "Solar"].drop(columns=["Capacity AC"]
-                                                             ).drop_duplicates().to_excel(os.path.join(export_path, "4.plant_solar.xlsx"), index=False)
+#%% Asset maanger import
+import_asset_manager_df = centrale_df[["Asset Manager"]].drop_duplicates()
+import_asset_manager_df["First Name"] = import_asset_manager_df["Asset Manager"].str.split(".").str[0]
+import_asset_manager_df["Last Name"] = import_asset_manager_df["Asset Manager"].str.split(".").str[1]
+import_asset_manager_df["Email"] = import_asset_manager_df["Asset Manager"].str.lower()
+import_asset_manager_df["Company"] = "EDF Renouvelables France"
+import_asset_manager_df["Title"] = "Chargé d'Affaires Gestion d'Actifs"
+import_asset_manager_df = import_asset_manager_df.drop(columns=["Asset Manager"])
 
 # %% Contrats
 contrat_df = (contrat_df
@@ -508,13 +535,13 @@ contrat_df = contrat_df.merge(
     how="left"
 )
 #%%
-# cross = contrat_df[['ID_CONTRAT', "RAISON_SOCIALE"]].merge(sap_company_df[['Company Name']].rename(columns={"Company Name": "Vendor"}), how='cross')
-# cross['match_acc'] = cross.apply(lambda x: fuzz.ratio(x["RAISON_SOCIALE"], x["Vendor"]), axis=1)
-# # contrat_df = 
-# contrat_df = contrat_df.merge(
-#     cross.sort_values(["ID_CONTRAT", "match_acc"], ascending=[True, False]).drop_duplicates(["ID_CONTRAT"])[["ID_CONTRAT", "Vendor"]],
-#     how='left'
-#     )
+cross = contrat_df[['ID_CONTRAT', "RAISON_SOCIALE"]].merge(sap_company_df[['Company Name']].rename(columns={"Company Name": "Vendor"}), how='cross')
+cross['match_acc'] = cross.apply(lambda x: fuzz.ratio(x["RAISON_SOCIALE"], x["Vendor"]), axis=1)
+# contrat_df = 
+contrat_df = contrat_df.merge(
+    cross.sort_values(["ID_CONTRAT", "match_acc"], ascending=[True, False]).drop_duplicates(["ID_CONTRAT"])[["ID_CONTRAT", "Vendor"]],
+    how='left'
+    )
 
 # %%
 contrat_to_bluepoint = {
@@ -523,21 +550,24 @@ contrat_to_bluepoint = {
     "Plant Identifier": "Plant Identifier",
     "DATE_DEBUT": "Start Date",
     "DATE_FIN": "End Date",
-    # "": "Vendor (Compagny)",
-    # "": "Client (Compagny)",
+    "Vendor": "Vendor (Compagny)",
+    "Company Name": "Client (Compagny)",
     "COMMENTAIRES": "Service Description",
 }
 
 import_contract_df = contrat_df.copy()
 import_contract_df = import_contract_df[(import_contract_df["ID_TYPE_CONTRAT"] != 137) & (
     ~import_contract_df["ID_TYPE_CONTRAT"].isna())]
+
 import_contract_df["ID_TYPE_CONTRAT"] = import_contract_df["ID_TYPE_CONTRAT"].replace(
     contrat_type_to_bluepoint)
+
 import_contract_df = import_contract_df.rename(columns=contrat_to_bluepoint)[
     list(contrat_to_bluepoint.values())]
+
 import_contract_df = pd.concat([
     import_contract_df[import_contract_df["Contract Type"].str.contains(
-        "Vente") == False],
+        "Vente") == False].rename(columns={"Company Name": "Client"}),
 
     import_contract_df[import_contract_df["Contract Type"].str.contains(
         "Vente") == True].rename(columns={"Vendor": "Client", "Company Name": "Vendor"})
@@ -570,35 +600,9 @@ import_contract_df["Service Description"] = import_contract_df["Service Descript
 import_contract_df["Service Description"] = import_contract_df["Service Description"].str.replace(
     "\r\n", " ")
 
-import_contract_df.to_excel(
-    os.path.join(export_path, f"10.contract.xlsx"),
-    index=False,
-    # date_format="%d/%m/%Y"
-)
+
 
 # %% Jalons
-# milestone_to_bluepoint = {
-#     "CODE_PI": "Plant ID",
-#     "ID_STATUT": "Milestone Type",
-#     "DATE_STATUT": "Date",
-#     "Actual": "Actual",
-# }
-
-# import_milestone_df = (centrale_df
-#                 .merge(
-#                         centrale_statut_df,
-#                         left_on="ID_CENTRALE",
-#                         right_on="ID_CENTRALE",
-#                         how='left')
-#                 .merge(
-#                         statut_df,
-#                         left_on="ID_STATUT",
-#                         right_on="ID_STATUT",
-#                         how="left"
-#                         )
-#                 )
-
-# %%
 milestone_to_bluepoint = {
     "CODE_PI": "Plant ID",
     "ID_EVENEMENT": "Milestone Type",
@@ -629,8 +633,7 @@ import_milestone_df["ID_EVENEMENT"] = import_milestone_df["ID_EVENEMENT"].replac
 import_milestone_df = import_milestone_df[list(
     milestone_to_bluepoint.keys())].rename(columns=milestone_to_bluepoint)
 
-import_milestone_df.to_excel(os.path.join(
-    export_path, "5.milestone.xlsx"), index=False)
+
 
 # %%
 milestone_type_to_bluepoint = {
@@ -746,12 +749,12 @@ meters_to_bluepoint = {
     "DISPO_SAISIE": "OEM Availability",
     # "PTHD": "",
     "PTH": "Weather Adjusted Production",
-    "DISPO_ENERGIE_SAISIE": "Availability",
+    "DISPO_ENERGIE_SAISIE": "Energy Based Availability",
     # "ERPR": "",
     # "IRPR": "",
     "PR_SAISI": "Performance Ratio",
     # "DATE_VALID_DISPO_CONTRACTUELLE": "",
-    "DISPO_TECHNIQUE_SAISI": "Availability",
+    "DISPO_TECHNIQUE_SAISI": "Time Based Availability",
 }
 
 import_meter_df = centrale_df[["ID_CENTRALE", "LIBELLE_TYPE_PROJET", "Plant ID"]].merge(
@@ -787,30 +790,26 @@ import_meter_df.loc[(import_meter_df["LIBELLE_TYPE_PROJET"] == "Eolien") & (
 import_meter_df.loc[(import_meter_df["LIBELLE_TYPE_PROJET"] == "PV Sol") & (
     import_meter_df["Meter"] == "Resource"), "Meter"] = "Irradiation"
 
-# import_meter_df[import_meter_df["Plant ID"]=="ROUS"].drop(columns=["LIBELLE_TYPE_PROJET"]).to_excel(
-import_meter_df[import_meter_df["Date (start)"].dt.year == 2023].drop(columns=["LIBELLE_TYPE_PROJET"]).to_excel(
-    os.path.join(export_path, "6.windga_meters.xlsx"),
-    index=False,
-    # date_format="%d/%m/%Y"
-)
 
 # %% Grilles tarifaires
 # "\\FRDEFCP-FS01\Business\OMEGA\Private\BUDGET FACTURATION\0-FACTURATION\00-INDICES\Archives\Calcul indexation par site - 20-21.xls"
 
 # %%
 # single_meter_plant =
+productible_theorique_df = pd.read_parquet(os.path.join(
+    data_folder_path, "productible_theorique.parquet"))
+
 type_productible_theorique_df = pd.read_parquet(os.path.join(
     data_folder_path, "type_productible_theorique.parquet"))
 
-productible_theorique_df = pd.read_parquet(os.path.join(
-    data_folder_path, "productible_theorique.parquet"))
+productible_theorique_mensuel_df = pd.read_parquet(os.path.join(
+    data_folder_path, "productible_theorique_mensuel.parquet"))
+
 productible_theorique_df = productible_theorique_df.merge(
     centrale_df[["ID_CENTRALE", "Plant ID"]],
     how="left"
 )
 
-productible_theorique_mensuel_df = pd.read_parquet(os.path.join(
-    data_folder_path, "productible_theorique_mensuel.parquet"))
 productible_theorique_mensuel_df["MOIS"] = productible_theorique_mensuel_df["MOIS"].replace({
     1: "January",
     2: "February",
@@ -849,18 +848,28 @@ productible_etude_df = pd.melt(
     productible_theorique_mensuel_df["PRODUCTION"].reset_index(),
     how="left"
 )
-productible_etude_df
-
-# %% Export
-
 # %% Equipements
 equipement_df = pd.read_parquet(os.path.join(
-    data_folder_path, "equipement.parquet"))
-equipement_df = equipement_df.merge(materiel_df[["ID_MATERIEL", "ID_TYPE_MATERIEL"]], left_on=["ID_MATERIEL"], right_on=["ID_MATERIEL"], how="left").merge(
-    type_entite_element_df[["ID_TYPE_ENTITE_ELEMENTS", "LIBELLE_ENTITE"]],
-    left_on=["ID_TYPE_MATERIEL"],
-    right_on=["ID_TYPE_ENTITE_ELEMENTS"],
-    how="left").rename(columns={"LIBELLE_ENTITE": "TYPE_MATERIEL"})
+    data_folder_path, 
+    "equipement.parquet"
+    ))
+
+equipement_df = equipement_df.merge(
+        materiel_df[["ID_MATERIEL", "ID_TYPE_MATERIEL"]], 
+        left_on=["ID_MATERIEL"], 
+        right_on=["ID_MATERIEL"], 
+        how="left"
+    ).merge(
+        type_entite_element_df[["ID_TYPE_ENTITE_ELEMENTS", "LIBELLE_ENTITE"]],
+        left_on=["ID_TYPE_MATERIEL"],
+        right_on=["ID_TYPE_ENTITE_ELEMENTS"],
+        how="left"
+    ).rename(
+        columns={"LIBELLE_ENTITE": "TYPE_MATERIEL"}
+    )
+
+
+
 equipement_df = equipement_df.merge(
     correpondance_id_df[["ID_CENTRALE", "Plant ID"]],
     how="left"
@@ -868,16 +877,24 @@ equipement_df = equipement_df.merge(
 
 equipement_df["IDENTIFIANT"] = equipement_df["Plant ID"] + "-" + equipement_df["IDENTIFIANT"] 
 
-equipement_df = equipement_df.merge(
-    materiel_df[["ID_MATERIEL", "MODELE"]].rename(columns={"MODELE": "Model"}),
-    how="left"
-)
+# equipement_df = equipement_df.merge(
+#     materiel_df[["ID_MATERIEL", "MODELE"]].rename(columns={"MODELE": "Model"}),
+#     how="left"
+# )
 
 equipement_df = equipement_df.merge(
     equipement_df[["ID_EQUIPEMENT_MATERIEL", "IDENTIFIANT"]].rename(columns={"IDENTIFIANT": "Parent Component"}),
     left_on=["ID_EQUIPEMENT_MATERIEL_PARENT"],
     right_on=["ID_EQUIPEMENT_MATERIEL"],
     how="left"
+)
+
+equipement_df["ID_TYPE_MATERIEL"] = equipement_df["ID_TYPE_MATERIEL"].replace(
+    materiel_type_to_bluepoint
+)
+
+equipement_df["ID_MATERIEL"] = equipement_df["ID_MATERIEL"].replace(
+    model_windga_to_bluepoint
 )
 #%%
 import_wtg_df = equipement_df.copy()
@@ -887,6 +904,8 @@ import_wtg_df = import_wtg_df.loc[
     "Plant ID",
     "TYPE_MATERIEL",
     "Parent Component",
+    "ID_TYPE_MATERIEL",
+    "ID_MATERIEL",
     # "OBSERVATION",
     "QUANTITE",
     "IDENTIFIANT",
@@ -909,17 +928,40 @@ import_wtg_df = import_wtg_df.loc[
     # 'REFERENCE_TRACKER',
 ]]
 
-# import_wtg_df = import_wtg_df.rename(columns={
-#     "TYPE_MATERIEL": "Component Type",
-#     ""
-# })
+import_wtg_df = import_wtg_df.rename(columns={
+        # "TYPE_MATERIEL": "Component Type",
+        "ID_TYPE_MATERIEL": "Component Type",
+        "ID_MATERIEL": "Model",
+        "QUANTITE": "Quantity",
+        "IDENTIFIANT": "Component ID",
+        "DATE_MISE_EN_SERVICE": "Date Installed",
+        "TURBINIER_WTG": "Manufacturer",
+        # "TURBINE_MODELE": "Model", # ??
+        "TURBINE_NUM_SERIE": "Serial Number", # ??        
+        })
+
+import_wtg_df["Component Type"] = "Éolienne"
+
+import_wtg_df = import_wtg_df[[
+    "Plant ID",
+    "Model",
+    "Component Type",
+    "Component ID",
+    "Parent Component",
+    "Quantity",
+    "Date Installed",
+    "Manufacturer",
+    "Model", # ??
+    "Serial Number",
+]]
 
 import_module_df = equipement_df.copy()
 import_module_df = import_module_df.loc[import_module_df["TYPE_MATERIEL"]=="MODULE_PV", :]
 
 
 import_module_df = import_module_df.rename(columns={
-    "TYPE_MATERIEL": "Component Type",
+     "ID_TYPE_MATERIEL": "Component Type",
+        "ID_MATERIEL": "Model",
     "IDENTIFIANT": "Component ID",
     "QUANTITE": "Quantity",
     "DATE_MISE_EN_SERVICE": "Date Installed",
@@ -943,9 +985,11 @@ import_onduleur_df = import_onduleur_df.loc[
      import_onduleur_df["TYPE_MATERIEL"]=="ONDULEUR",
      [
     "Plant ID",
-    "Model",
+    # "Model",
     "TYPE_MATERIEL",
     "Parent Component",
+    "ID_TYPE_MATERIEL",
+    "ID_MATERIEL",
     # "OBSERVATION",
     "QUANTITE",
     "IDENTIFIANT",
@@ -974,7 +1018,8 @@ import_onduleur_df = import_onduleur_df.loc[
 ]
 
 import_onduleur_df = import_onduleur_df.rename(columns={
-"TYPE_MATERIEL": "Component Type",
+ "ID_TYPE_MATERIEL": "Component Type",
+        "ID_MATERIEL": "Model",
 "QUANTITE": "Quantity",
 "IDENTIFIANT": "Component ID",
 "DATE_MISE_EN_SERVICE": "Date Installed",
@@ -987,9 +1032,10 @@ import_pdl_df = import_pdl_df.loc[
      import_pdl_df["TYPE_MATERIEL"]=="PDL",
      [
     "Plant ID",
-    "Model",
     "TYPE_MATERIEL",
     "Parent Component",
+        "ID_TYPE_MATERIEL",
+    "ID_MATERIEL",
     # "OBSERVATION",
     "QUANTITE",
     "IDENTIFIANT",
@@ -1018,25 +1064,101 @@ import_pdl_df = import_pdl_df.loc[
 ]
 
 import_pdl_df = import_pdl_df.rename(columns={
-"TYPE_MATERIEL": "Component Type",
+ "ID_TYPE_MATERIEL": "Component Type",
+        "ID_MATERIEL": "Model",
 "QUANTITE": "Quantity",
 "IDENTIFIANT": "Component ID",
 "DATE_MISE_EN_SERVICE": "Date Installed",
 })
-import_pdl_df
 
+#%% SAP Companies
+import_sap_company_df = sap_company_df[
+    (sap_company_df["Company Name"].isin(import_contract_df["Vendor (Compagny)"]))
+    | (sap_company_df["Company Name"].isin(import_contract_df["Client (Compagny)"]))
+    ].copy()
+import_sap_company_df["Incorporation date"] = pd.to_datetime(import_sap_company_df["Incorporation date"], dayfirst=True)
+import_sap_company_df["Country"] = "France"
+import_sap_company_df = import_sap_company_df.rename(columns={
+    "BP Number": "Vendor ID",
+    "Company Number (SIREN)": "Company Number",
+})
+
+#%%
+
+sap_project_company_df.to_excel(
+        os.path.join(export_path, f"1.1.sas.xlsx"),
+    index=False,
+)
+
+
+import_sap_company_df.to_excel(
+            os.path.join(export_path, f"1.2.companies.xlsx"),
+    index=False,
+)
+
+import_asset_manager_df.to_excel(
+            os.path.join(export_path, f"2.1.contact_caga.xlsx"),
+    index=False,
+)
+
+import_wind_plant_df["Tags"] = "A vérifier"
+import_wind_plant_df.to_excel( 
+    os.path.join(export_path, f"3.1.wind_plant.xlsx"),
+    index=False,
+)
+
+import_solar_plant_df["Tags"] = "A vérifier"
+import_solar_plant_df.to_excel(
+    os.path.join(export_path, f"3.2.solar_plant.xlsx"),
+    index=False,
+)
+
+
+import_pdl_df["Tags"] = "A vérifier"
 import_pdl_df.to_excel(
-    os.path.join(export_path, "component_pdl.xlsx"),
+    os.path.join(export_path, "4.1.component_pdl.xlsx"),
     index=False,
     # date_format="%d/%m/%Y"
     )
+import_onduleur_df["Tags"] = "A vérifier"
 import_onduleur_df.to_excel(
-    os.path.join(export_path, "component_onduleur.xlsx"),
+    os.path.join(export_path, "4.2.component_onduleur.xlsx"),
     index=False,
     # date_format="%d/%m/%Y"
     )
+import_module_df["Tags"] = "A vérifier"
 import_module_df.to_excel(
-    os.path.join(export_path, "component_module.xlsx"),
+    os.path.join(export_path, "4.3.component_module.xlsx"),
     index=False,
     # date_format="%d/%m/%Y"
     )
+
+import_wtg_df["Tags"] = "A vérifier"
+import_wtg_df.to_excel(
+    os.path.join(export_path, "4.4.component_wtg.xlsx"),
+    index=False,
+    # date_format="%d/%m/%Y"
+    )
+
+import_contract_df["Tags"] = "A vérifier"
+import_contract_df.to_excel(
+    os.path.join(export_path, f"5.1.contract.xlsx"),
+    index=False,
+    # date_format="%d/%m/%Y"
+)
+
+import_milestone_df["Tags"] = "A vérifier"
+import_milestone_df.to_excel(os.path.join(
+    export_path, "x.milestone.xlsx"), index=False)
+
+milestone_df.to_excel(os.path.join(
+    export_path, "x.milestone.xlsx"), index=False)
+
+import_meter_df[import_meter_df["Date (start)"].dt.year == 2023].drop(columns=["LIBELLE_TYPE_PROJET"]).to_excel(
+    os.path.join(export_path, "9.windga_meters.xlsx"),
+    index=False,
+    # date_format="%d/%m/%Y
+    # "
+)
+
+

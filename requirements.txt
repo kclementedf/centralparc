@@ -3,4 +3,5 @@ ipykernel
 openpyxl
 rapidfuzz
 fastparquet
-splink
+websocket
+tqdm

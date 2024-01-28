@@ -8,42 +8,41 @@ import pandas as pd
 limit_scope_to = None
 
 limit_scope_to = [
-"ANPA",
-"BVER",
-"JON2",
-"JONC",
-"ROUS",
+# "ANPA",
+# "BVER",
+# "JONC",
+# "ARAM",
+# "EYGU",
+# "SACU", # vente au post
+# "PEZI",
+"BTSX",
+"LBDF",
+"LDTE",
+"MACH",
+"PLAN",
+"TRAY",
+"BRIA",
+"NITR,"
+"COLB",
 "CY11",
-"FIEN",
+"CY12",
+"CY13",
 "MA22",
+"MA24",
+"SUBL",
 "TL11",
-"PEZI",
-"CHPI",
 "TL12",
 "TL13",
 "TL14",
 "TL15",
-"MA24",
-"CY12",
-"CY13",
-"BRIA",
-"COLB",
-"NITR",
-"JAVI",
-"LEMO",
-"SALL",
-"COT1",
-"COT2",
-"COT3",
-"COT4",
-"VARA",
+"VACH",
 ]
 
 
 if platform == "windows":
-    data_folder_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\01.Snapshot"
-    export_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\04 - Migration données\03.Bluepoint import data"
-    objet_type_to_bluepoint_config_file = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 02 - Conception - 02 - Conception\03 - Paramètrage\parametrage_objets.xlsx"
+    data_folder_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 03 - Réalisation - 03 - Réalisation\02.Migration données\01.Snapshot"
+    export_path = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 03 - Réalisation - 03 - Réalisation\02.Migration données\03.Import data\01.Brut"
+    objet_type_to_bluepoint_config_file = r"C:\Users\kclement\EDF Renouvelables\Central Parc - 03 - Réalisation - 03 - Réalisation\01.Bluepoint\parametrage_objets.xlsx"
 
 if platform == "linux":
     data_folder_path = r"/home/EDF/centralparc/01.Snapshot"
@@ -63,7 +62,7 @@ event_type_to_bluepoint = (
 #%% WSP
 event_to_bluepoint = {
 # "ID": "Event ID",
-"Parc": "Plant Identifiers",
+"Title": "Plant Identifiers",
 "Catégorie": "Event Type",
 "Avancement": "Status",
 # "Nb machines": "machines",
@@ -105,7 +104,7 @@ if limit_scope_to:
     import_event_df = import_event_df[import_event_df["Plant Identifiers"].isin(limit_scope_to)]
 
 import_event_df.to_excel(
-    os.path.join(export_path, "event_wsp.xlsx"),
+    os.path.join(export_path, "11.event_wsp.xlsx"),
     index=False,
     #sep=",",
     # date_format="%d/%m/%Y"
